@@ -75,10 +75,10 @@ public class Enemy_Controller_2d : MonoBehaviour
         return val;
     }
 
-    private bool NearEdge()
+    /*private bool NearEdge()
     {
 
-    }
+    }*/
 
 
 
