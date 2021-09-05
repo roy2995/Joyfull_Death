@@ -10,7 +10,6 @@ public class Enemy_patrol : MonoBehaviour
 
     [Header("Patrol AI settings")]
     public Transform CastPost;
-    public Transform viwpoint;
     public float baseCastDist;
     Vector3 basescale;
     string faceDirection;
@@ -58,7 +57,6 @@ public class Enemy_patrol : MonoBehaviour
         }
 
         transform.localScale = newScale;
-        viwpoint.localScale = newScale;
         faceDirection = newDirection;
     }
 

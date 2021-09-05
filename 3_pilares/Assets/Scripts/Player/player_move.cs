@@ -21,13 +21,7 @@ public class player_move : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
-            player_animator.SetBool("Jumping", true);
         }
-    }
-
-    public void OnLanding()
-    {
-        player_animator.SetBool("Jumping", false);
     }
 
     private void FixedUpdate()
