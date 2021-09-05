@@ -808,7 +808,7 @@ MonoBehaviour:
     - Estare observando desde aqui tu viaje.
   dialoguePanel: {fileID: 34429169}
   displayText: {fileID: 827886138}
-  SentenceSpeed: -0.1
+  SentenceSpeed: 0.1
   speakSound: {fileID: 8300000, guid: 3282c4a060acd664a812a1eeb215415d, type: 3}
   CanSpeak: 0
 --- !u!58 &1001851197
