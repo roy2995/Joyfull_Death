@@ -765,20 +765,20 @@ MonoBehaviour:
   dialogue:
     name: Naruto
     sentenceList:
-    - Kento, una ves mas debo pedir de tu ayuda.
-    - La aldea de las flores del rosio estan siendo atacadas por criminales.
+    - "Kento, una vez m\xE1s debo pedir de tu ayuda."
+    - "La aldea de las flores del roci\xF3 est\xE1n siendo atacadas por criminales."
     - Debo pedirte que te deshagas de ellos, pero reunir la paz que estaba dentro
       de nuestra tierra.
-    - "Una ves venzas a estos criminales, te ense\xF1are nuevos trucos que podras
+    - "Una vez venzas a estos criminales, te ense\xF1ar\xE9 nuevos trucos que podr\xE1s
       usar en tu camino."
-    - Esto te ayudara a facilitarte el trabajo.
-    - 'No hagas esto por mi Kento, haslo por las personas de nuestro pueblo quien
+    - "Esto te ayudar\xE1 a facilitarte el trabajo."
+    - 'No hagas esto por mi Kento, hazlo por las personas de nuestro pueblo quien
       depende de estas flores
 
       curativas.'
-    - Sin estas flores de rosio, nuestra aldea estaria llena de enfermedades...
-    - Porfavor Kento, haslo por el pueblo.
-    - Estare observando desde aqui tu viaje.
+    - "Sin estas flores de roci\xF3, nuestra aldea estar\xEDa llena de enfermedades\u2026"
+    - Por favor Kento, hazlo por el pueblo.
+    - "Estar\xE9 observando desde aqu\xED tu viaje."
   dialoguePanel: {fileID: 34429169}
   displayText: {fileID: 827886138}
   SentenceSpeed: 0.1
