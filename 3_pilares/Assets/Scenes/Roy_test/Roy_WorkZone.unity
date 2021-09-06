@@ -659,17 +659,16 @@ GameObject:
   m_Component:
   - component: {fileID: 980480875}
   - component: {fileID: 980480874}
-  - component: {fileID: 980480873}
-  - component: {fileID: 980480872}
   - component: {fileID: 980480871}
   - component: {fileID: 980480876}
+  - component: {fileID: 980480872}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: Enemy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &980480871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -705,30 +704,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 980480870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2719c0d895dc2874aabe38a54f498873, type: 3}
+  m_Script: {fileID: 11500000, guid: 51e60a5b3e31cf3478885ec77a00be1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrol_mode: {fileID: 980480873}
-  player: {fileID: 606652282}
+  Cast_post: {fileID: 257226040}
+  Player: {fileID: 606652282}
+  patrolMoveSpeed: 5
+  base_cast_dist: 0.5
   AgroRange: 10
-  moveSpeed: 2.5
+  detecMoveSpeed: 2.3
+  detection: 0
   x: 4
   y: 4
---- !u!114 &980480873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980480870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4bd58723b63883469df41965480ced0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  CastPost: {fileID: 257226040}
-  baseCastDist: 0.5
 --- !u!212 &980480874
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -815,7 +802,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1330034906
 GameObject:
   m_ObjectHideFlags: 0
