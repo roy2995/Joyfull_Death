@@ -11,6 +11,9 @@ public class Enemy_Controller_2d : MonoBehaviour
     public Transform Cast_post;
     //detection objects
     public Transform Player;
+    //animator
+    public Animator E_animator;
+    public Transform attack_point;
 
     [Header("Enemy_Patrol Settings")]
     [Range(0, 10)] public float patrolMoveSpeed;
@@ -27,17 +30,25 @@ public class Enemy_Controller_2d : MonoBehaviour
     public float x;
     public float y;
 
+    [Header("Enemy Attack settings")]
+    public int attack_damage = 100;
+    [Range(0, 10)]public float attack_rate;
+    [Range(0, 10f)] public float attack_range = .5f;
+    public LayerMask playerlayer;
+    float next_attack_time = 0f;
+
     private void Awake()
     {
         pat_faceDirection = pat_Right;
         Base_Scale = transform.localScale;
         Enemy_rig = GetComponent<Rigidbody2D>();
+        E_animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
-        Debug.Log(detection);
         float distance = Vector2.Distance(transform.position, Player.position);
+        Debug.Log(distance);
         if (detection == false)
         {
             Enemy_Patrol();
@@ -50,6 +61,7 @@ public class Enemy_Controller_2d : MonoBehaviour
         }
         else
         {
+            E_animator.SetTrigger("wallck");
             detection = false;
         }
     }
@@ -59,13 +71,15 @@ public class Enemy_Controller_2d : MonoBehaviour
         float distances = Vector2.Distance(transform.position, Player.position);
         if (distances < AgroRange)
         {
-            //chase player & stop patrol
-            chase_player();  
+            chase_player();
+            if(distances > 3 && Time.time >= next_attack_time)
+            {
+                Attack();
+                next_attack_time = Time.time + 1 / attack_rate;
+            }
         }
         else
         {
-            //stop chase & continue patrol
-            detection = false;
             stopchase();
         }
     }
@@ -90,7 +104,6 @@ public class Enemy_Controller_2d : MonoBehaviour
         Debug.Log("stopchase detectado");
         detection = false;
     }
-
 
     public void Enemy_Patrol()
     {
@@ -176,5 +189,21 @@ public class Enemy_Controller_2d : MonoBehaviour
         }
         transform.localScale = newScale;
         pat_faceDirection = newDirection;
+    }
+
+    private void Attack()
+    {
+        E_animator.SetTrigger("attack");
+        Collider2D[] hitplayer = Physics2D.OverlapCircleAll(attack_point.position, attack_range, playerlayer);
+        return;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(attack_point == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attack_point.position, attack_range);
     }
 }
