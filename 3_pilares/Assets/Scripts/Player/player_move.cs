@@ -10,24 +10,99 @@ public class player_move : MonoBehaviour
     float horizontalMove = 0;
     bool jump = false;
 
+    [Header("Dash Settings")]
+    [Range(0, 30)] public float DashDistance;
+    bool isdashing;
+    float DoubleTapTime;
+    KeyCode lastKeyCode;
+    Rigidbody2D player_rig;
+    public Collider2D player_collider;
+
     [Header("Animator Settings")]
     public Animator player_animator;
+
+    private void Start()
+    {
+        player_rig = GetComponent<Rigidbody2D>();
+        player_collider = GetComponent<Collider2D>();
+    }
+
 
     private void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         player_animator.SetFloat("speed", Mathf.Abs(horizontalMove));
-
+        Dash();
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            player_animator.SetBool("Jumping", true);
         }
+
+    }
+
+    public void OnLanding()
+    {
+        player_animator.SetBool("Jumping", false);
     }
 
     private void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
-        
+
     }
+
+    private void Dash()
+    {
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (DoubleTapTime > Time.time && lastKeyCode == KeyCode.A)
+            {
+                //dash active
+                Debug.Log("enta en A");
+                StartCoroutine(dash(-1f));
+            }
+            else
+            {
+                DoubleTapTime = Time.time + .5f;
+            }
+            lastKeyCode = KeyCode.A;
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (DoubleTapTime > Time.time && lastKeyCode == KeyCode.A)
+            {
+                Debug.Log("enta en D");
+                //dash active
+                StartCoroutine(dash(1f));
+            }
+            else
+            {
+                DoubleTapTime = Time.time + .5f;
+            }
+            lastKeyCode = KeyCode.D;
+        }
+    }
+
+    IEnumerator dash(float direction)
+    {
+        isdashing = true;
+        player_rig.velocity = new Vector2(player_rig.velocity.x, 0);
+        player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
+        player_collider.enabled = false;
+        float gravity = player_rig.gravityScale;
+        player_rig.gravityScale = 0;
+        yield return new WaitForSeconds(1f);
+        isdashing = false;
+        player_collider.enabled = true;
+        player_rig.gravityScale = gravity;
+    }
+
+
+
+
+
 }

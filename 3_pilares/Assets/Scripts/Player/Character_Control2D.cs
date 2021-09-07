@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Character_Control2D : MonoBehaviour
 {
@@ -22,26 +23,46 @@ public class Character_Control2D : MonoBehaviour
     private bool facingRight = true;
     private Vector3 velocity = Vector3.zero;
 
+    [Header("Events")]
+    [Space]
+
+    public UnityEvent OnLandEvent;
+
+    [System.Serializable]
+    public class BoolEvent : UnityEvent<bool> { }
+
+    public BoolEvent OnCrouchEvent;
+    private bool wasCrouching = false;
+
     private void Awake()
     {
         player_rig = GetComponent<Rigidbody2D>();
+
+        if (OnLandEvent == null)
+            OnLandEvent = new UnityEvent();
+
+        if (OnCrouchEvent == null)
+            OnCrouchEvent = new BoolEvent();
     }
 
     private void FixedUpdate()
     {
+        bool wasGrounded = grounded;
         grounded = false;
 
         Collider2D[] colliders = Physics2D.OverlapCircleAll(goundcheck.position, groundedRadius, groundtag);
         for (int i = 0; i < colliders.Length; i++)
         {
-            if(colliders[i].gameObject != gameObject)
+            if (colliders[i].gameObject != gameObject)
             {
                 grounded = true;
+                if (!wasGrounded)
+                    OnLandEvent.Invoke();
             }
         }
     }
 
-    public void Move(float move,bool crouch, bool jump)
+    public void Move(float move, bool crouch, bool jump)
     {
         if (!crouch)
         {
@@ -51,20 +72,35 @@ public class Character_Control2D : MonoBehaviour
             }
         }
 
-        if(grounded || aircontrol)
+        if(goundcheck || aircontrol)
         {
             if (crouch)
             {
+                if (!wasCrouching)
+                {
+                    wasCrouching = true;
+                    OnCrouchEvent.Invoke(true);
+                }
                 move *= max_crouchSpeed;
-
-                if (crounchDiseableCollider != null)
+                if(crounchDiseableCollider != null)
+                {
                     crounchDiseableCollider.enabled = false;
+                }
             }
             else
             {
                 if(crounchDiseableCollider != null)
+                {
                     crounchDiseableCollider.enabled = true;
+                }
+
+                if (wasCrouching)
+                {
+                    wasCrouching = false;
+                    OnCrouchEvent.Invoke(false);
+                }
             }
+            
             Vector3 targetVelocity = new Vector2(move * 10f, player_rig.velocity.y);
             player_rig.velocity = Vector3.SmoothDamp(player_rig.velocity, targetVelocity, ref velocity, max_MoveSmooth);
 
@@ -72,20 +108,19 @@ public class Character_Control2D : MonoBehaviour
             {
                 Flip();
             }
-            else if(move < 0 && facingRight)
+            else if (move < 0 && facingRight)
             {
                 Flip();
-            }
+            }   
         }
-
         if(grounded && jump)
         {
             grounded = false;
-            player_rig.AddForce(new Vector2(0, max_JumpForce));
+            player_rig.AddForce(new Vector2(0f, max_JumpForce));
         }
     }
 
-    private void Flip()
+    public void Flip()
     {
         facingRight = !facingRight;
 

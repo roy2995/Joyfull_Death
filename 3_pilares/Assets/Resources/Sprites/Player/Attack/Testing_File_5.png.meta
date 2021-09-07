@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: bf0f6da51a9f02c43b1397eb04ea9aee
+guid: af7a48de29a2ffe448b769bd251cdf16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3991445644507830086
-    second: Testing File 6_0
+      213: 7410150441460490463
+    second: Testing_File_5_0
   - first:
-      213: -667277838159800032
-    second: Testing File 6_1
+      213: 3176276198997618588
+    second: Testing_File_5_1
   - first:
-      213: -8926223785326915368
-    second: Testing File 6_2
+      213: 5360555216062630644
+    second: Testing_File_5_2
   - first:
-      213: -7844090278803051179
-    second: Testing File 6_3
-  - first:
-      213: 6717748044796900220
-    second: Testing File 6_4
-  - first:
-      213: -9162274272177870073
-    second: Testing File 6_5
+      213: -81398161057849856
+    second: Testing_File_5_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,131 +97,113 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Testing File 6_0
+      name: Testing_File_5_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 15
-        width: 85
+        x: 6
+        y: 12
+        width: 68
         height: 119
       alignment: 9
-      pivot: {x: 0.7287161, y: 0.3722754}
+      pivot: {x: 0.8399572, y: 0.4331575}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8a4da75598b98c0800000000000000
-      internalID: -3991445644507830086
+      spriteID: fd0e47bd09426d660800000000000000
+      internalID: 7410150441460490463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Testing File 6_1
+      name: Testing_File_5_1
       rect:
         serializedVersion: 2
-        x: 114
-        y: 15
-        width: 85
-        height: 119
+        x: 80
+        y: 11
+        width: 87
+        height: 117
       alignment: 9
-      pivot: {x: 0.73079526, y: 0.37376058}
+      pivot: {x: 0.67428535, y: 0.4383885}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0299ef1775a5db6f0800000000000000
-      internalID: -667277838159800032
+      spriteID: c9fe7c5df56641c20800000000000000
+      internalID: 3176276198997618588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Testing File 6_2
+      name: Testing_File_5_2
       rect:
         serializedVersion: 2
-        x: 220
-        y: 15
-        width: 86
-        height: 119
+        x: 172
+        y: 12
+        width: 154
+        height: 110
       alignment: 9
-      pivot: {x: 0.7424969, y: 0.36930507}
+      pivot: {x: 0.3345554, y: 0.44802624}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d052f9a2ceaf1480800000000000000
-      internalID: -8926223785326915368
+      spriteID: 4fac74c4194846a40800000000000000
+      internalID: 5360555216062630644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Testing File 6_3
+      name: Testing_File_5_3
       rect:
         serializedVersion: 2
-        x: 321
-        y: 16
-        width: 85
-        height: 119
+        x: 335
+        y: 12
+        width: 153
+        height: 110
       alignment: 9
-      pivot: {x: 0.73495376, y: 0.36187923}
+      pivot: {x: 0.34600532, y: 0.44068506}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d69d18371342390800000000000000
-      internalID: -7844090278803051179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Testing File 6_4
-      rect:
-        serializedVersion: 2
-        x: 414
-        y: 14
-        width: 86
-        height: 119
-      alignment: 9
-      pivot: {x: 0.74455225, y: 0.35445338}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c73b1bc214c3a3d50800000000000000
-      internalID: 6717748044796900220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Testing File 6_5
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 14
-        width: 69
-        height: 119
-      alignment: 9
-      pivot: {x: 0.6997875, y: 0.3589089}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70b2320e71019d080800000000000000
-      internalID: -9162274272177870073
+      spriteID: 00ed6c4cdc0dedef0800000000000000
+      internalID: -81398161057849856
       vertices: []
       indices: 
       edges: []
