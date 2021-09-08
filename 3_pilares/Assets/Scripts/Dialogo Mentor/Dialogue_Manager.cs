@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue_Manager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Dialogue_Manager : MonoBehaviour
     Queue<string> sentences;
 
     public GameObject dialoguePanel;
-    public TextMeshProUGUI displayText;
+    public Text displayText;
 
     string activeSentence;
     public float SentenceSpeed;
