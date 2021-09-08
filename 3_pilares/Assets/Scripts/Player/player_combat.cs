@@ -18,7 +18,7 @@ public class player_combat : MonoBehaviour
     {
         if(Time.time >= next_attack_time)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && Unlook_habilities.sword_attack == true)
             {
                 attack();
                 next_attack_time = Time.time + 1f / attack_rate;

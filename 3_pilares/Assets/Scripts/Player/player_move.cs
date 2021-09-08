@@ -32,7 +32,7 @@ public class player_move : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         player_animator.SetFloat("speed", Mathf.Abs(horizontalMove));
-        if(jump == false)
+        if (jump == false && Unlook_habilities.dash == true)
             Dash();
         if (Input.GetButtonDown("Jump"))
         {
@@ -63,6 +63,7 @@ public class player_move : MonoBehaviour
             {
                 //dash active
                 Debug.Log("enta en A");
+                player_animator.SetTrigger("Dashing");
                 player_collider.enabled = false;
                 StartCoroutine(dash(-1f));
             }
@@ -79,6 +80,7 @@ public class player_move : MonoBehaviour
             {
                 Debug.Log("enta en D");
                 //dash active
+                player_animator.SetTrigger("Dashing");
                 player_collider.enabled = false;
                 StartCoroutine(dash(1f));
             }
