@@ -16,7 +16,7 @@ public class player_move : MonoBehaviour
     float DoubleTapTime;
     KeyCode lastKeyCode;
     Rigidbody2D player_rig;
-    public Collider2D player_collider;
+    public BoxCollider2D player_collider;
 
     [Header("Animator Settings")]
     public Animator player_animator;
@@ -24,7 +24,7 @@ public class player_move : MonoBehaviour
     private void Start()
     {
         player_rig = GetComponent<Rigidbody2D>();
-        player_collider = GetComponent<Collider2D>();
+        player_collider = GetComponent<BoxCollider2D>();
     }
 
 
@@ -32,7 +32,8 @@ public class player_move : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         player_animator.SetFloat("speed", Mathf.Abs(horizontalMove));
-        Dash();
+        if(jump == false)
+            Dash();
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -62,6 +63,7 @@ public class player_move : MonoBehaviour
             {
                 //dash active
                 Debug.Log("enta en A");
+                player_collider.enabled = false;
                 StartCoroutine(dash(-1f));
             }
             else
@@ -77,6 +79,7 @@ public class player_move : MonoBehaviour
             {
                 Debug.Log("enta en D");
                 //dash active
+                player_collider.enabled = false;
                 StartCoroutine(dash(1f));
             }
             else
@@ -92,13 +95,8 @@ public class player_move : MonoBehaviour
         isdashing = true;
         player_rig.velocity = new Vector2(player_rig.velocity.x * direction, 0);
         player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
-        player_collider.enabled = false;
-        float gravity = player_rig.gravityScale;
-        player_rig.gravityScale = 0;
         yield return new WaitForSeconds(1f);
-        isdashing = false;
-        player_collider.enabled = true;
-        player_rig.gravityScale = gravity;
+        //player_collider.enabled = true;
     }
 
 
