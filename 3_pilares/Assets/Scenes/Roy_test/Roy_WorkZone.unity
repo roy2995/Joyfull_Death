@@ -199,7 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 58893994}
   runSpeed: 40
-  DashDistance: 30
+  DashDistance: 183
   player_collider: {fileID: 58893996}
   player_animator: {fileID: 58893991}
 --- !u!114 &58893994
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fce318d11748d64695cd98b46381ba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max_JumpForce: 800
+  max_JumpForce: 700
   max_crouchSpeed: 0.36
   max_MoveSmooth: 0.05
   aircontrol: 1
@@ -348,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58893990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.39, y: -7.13, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 478366935}
