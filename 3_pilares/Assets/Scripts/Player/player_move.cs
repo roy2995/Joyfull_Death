@@ -11,7 +11,7 @@ public class player_move : MonoBehaviour
     bool jump = false;
 
     [Header("Dash Settings")]
-    [Range(0, 30)] public float DashDistance;
+    [Range(0, 300)] public float DashDistance;
     bool isdashing;
     float DoubleTapTime;
     KeyCode lastKeyCode;
@@ -73,7 +73,7 @@ public class player_move : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            if (DoubleTapTime > Time.time && lastKeyCode == KeyCode.A)
+            if (DoubleTapTime > Time.time && lastKeyCode == KeyCode.D)
             {
                 Debug.Log("enta en D");
                 //dash active
@@ -90,7 +90,7 @@ public class player_move : MonoBehaviour
     IEnumerator dash(float direction)
     {
         isdashing = true;
-        player_rig.velocity = new Vector2(player_rig.velocity.x, 0);
+        player_rig.velocity = new Vector2(player_rig.velocity.x * direction, 0);
         player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
         player_collider.enabled = false;
         float gravity = player_rig.gravityScale;
