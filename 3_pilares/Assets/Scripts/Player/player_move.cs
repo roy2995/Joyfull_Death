@@ -64,7 +64,7 @@ public class player_move : MonoBehaviour
                 //dash active
                 Debug.Log("enta en A");
                 player_animator.SetTrigger("Dashing");
-                //player_collider.enabled = false;
+                player_collider.enabled = false;
                 StartCoroutine(dash(-1f));
             }
             else
@@ -81,7 +81,7 @@ public class player_move : MonoBehaviour
                 Debug.Log("enta en D");
                 //dash active
                 player_animator.SetTrigger("Dashing");
-                //player_collider.enabled = false;
+                player_collider.enabled = false;
                 StartCoroutine(dash(1f));
             }
             else
@@ -97,9 +97,8 @@ public class player_move : MonoBehaviour
         isdashing = true;
         player_rig.velocity = new Vector2(player_rig.velocity.x * direction, 0);
         player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
-        //player_collider.enabled = true;
-        yield return new WaitForSeconds(1f);
-
+        yield return new WaitForSeconds(.1f);
+        player_collider.enabled = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
