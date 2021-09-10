@@ -1,25 +1,40 @@
 fileFormatVersion: 2
-guid: c9181bef223ac7045b53b51d14ca8e16
+guid: 48d0bb8ff4e4136468bf9d7fef5dfd32
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1375002168712403691
-    second: Background Mentor Talk_0
+      213: -2205066400391235333
+    second: Background _0
   - first:
-      213: -7109977562779448
-    second: Background Mentor Talk_1
+      213: 5007373847448578982
+    second: Background _1
   - first:
-      213: 7552116069616799349
-    second: Background Mentor Talk_2
+      213: -3548328102366406473
+    second: Background _2
   - first:
-      213: -4444903405452991572
-    second: Background Mentor Talk_3
+      213: 5754399908917256435
+    second: Background _3
   - first:
-      213: 2706573852749651671
-    second: Background Mentor Talk_4
+      213: 4003446203269599886
+    second: Background _4
   - first:
-      213: -267646785444535130
-    second: Background Mentor Talk_5
+      213: 6949472232998137850
+    second: Background _5
+  - first:
+      213: -1544282485564100134
+    second: Background _6
+  - first:
+      213: -674911220119403651
+    second: Background _7
+  - first:
+      213: 3790649039266633782
+    second: Background _8
+  - first:
+      213: -5210612976332794883
+    second: Background _4
+  - first:
+      213: -8360342553801378615
+    second: Background _8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,18 +65,18 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 1
-    wrapV: 1
-    wrapW: 1
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -103,17 +118,41 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background Mentor Talk_0
+      name: Background _0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 1922
-        height: 838
+        y: 389
+        width: 624
+        height: 699
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bea9e77ff2df41310800000000000000
-      internalID: 1375002168712403691
+      spriteID: bf8f782bac70661e0800000000000000
+      internalID: -2205066400391235333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background Mentor Talk_1
+      name: Background _1
       rect:
         serializedVersion: 2
-        x: 1922
-        y: 596
-        width: 285
-        height: 132
+        x: 632
+        y: 500
+        width: 610
+        height: 588
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c07209538db6eff0800000000000000
-      internalID: -7109977562779448
+      spriteID: 6abe0caebf3cd7540800000000000000
+      internalID: 5007373847448578982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background Mentor Talk_2
+      name: Background _2
       rect:
         serializedVersion: 2
-        x: 3128
-        y: 605
-        width: 76
-        height: 90
+        x: 1832
+        y: 848
+        width: 152
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e47007d818ec860800000000000000
-      internalID: 7552116069616799349
+      spriteID: 7b81ae7046ec1cec0800000000000000
+      internalID: -3548328102366406473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background Mentor Talk_3
+      name: Background _5
       rect:
         serializedVersion: 2
-        x: 3207
-        y: 608
-        width: 219
-        height: 240
+        x: 1595
+        y: 691
+        width: 99
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,50 +223,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca3ec0127e78052c0800000000000000
-      internalID: -4444903405452991572
+      spriteID: aff6b401d2c717060800000000000000
+      internalID: 6949472232998137850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background Mentor Talk_4
+      name: Background _6
       rect:
         serializedVersion: 2
-        x: 3651
-        y: 661
-        width: 208
-        height: 175
-      alignment: 9
-      pivot: {x: 0.5011914, y: 0.71221226}
+        x: 1689
+        y: 691
+        width: 221
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ded08b349eaf8520800000000000000
-      internalID: 2706573852749651671
+      spriteID: ad13817e24b919ae0800000000000000
+      internalID: -1544282485564100134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Background Mentor Talk_5
+      name: Background _7
       rect:
         serializedVersion: 2
-        x: 3449
-        y: 655
-        width: 102
-        height: 126
-      alignment: 9
-      pivot: {x: 0.6068019, y: 0.5019652}
+        x: 2024
+        y: 693
+        width: 532
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4ad4caaa0294cf0800000000000000
-      internalID: -267646785444535130
+      spriteID: d738bd532db32a6f0800000000000000
+      internalID: -674911220119403651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background _3
+      rect:
+        serializedVersion: 2
+        x: 3889
+        y: 202
+        width: 331
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0ad82aa3cbbdf40800000000000000
+      internalID: 5754399908917256435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background _4
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 582
+        width: 954
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df394a3ea1f20b7b0800000000000000
+      internalID: -5210612976332794883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Background _8
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 161
+        width: 1047
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c436180eb81afb80800000000000000
+      internalID: -8360342553801378615
       vertices: []
       indices: 
       edges: []

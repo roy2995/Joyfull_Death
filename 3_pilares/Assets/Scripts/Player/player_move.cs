@@ -16,7 +16,7 @@ public class player_move : MonoBehaviour
     float DoubleTapTime;
     KeyCode lastKeyCode;
     Rigidbody2D player_rig;
-    public BoxCollider2D player_collider;
+    public CapsuleCollider2D player_collider;
 
     [Header("Animator Settings")]
     public Animator player_animator;
@@ -24,7 +24,7 @@ public class player_move : MonoBehaviour
     private void Start()
     {
         player_rig = GetComponent<Rigidbody2D>();
-        player_collider = GetComponent<BoxCollider2D>();
+        player_collider = GetComponent<CapsuleCollider2D>();
     }
 
 
@@ -64,7 +64,7 @@ public class player_move : MonoBehaviour
                 //dash active
                 Debug.Log("enta en A");
                 player_animator.SetTrigger("Dashing");
-                player_collider.enabled = false;
+                //player_collider.enabled = false;
                 StartCoroutine(dash(-1f));
             }
             else
@@ -81,7 +81,7 @@ public class player_move : MonoBehaviour
                 Debug.Log("enta en D");
                 //dash active
                 player_animator.SetTrigger("Dashing");
-                player_collider.enabled = false;
+                //player_collider.enabled = false;
                 StartCoroutine(dash(1f));
             }
             else
@@ -97,11 +97,23 @@ public class player_move : MonoBehaviour
         isdashing = true;
         player_rig.velocity = new Vector2(player_rig.velocity.x * direction, 0);
         player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
-        yield return new WaitForSeconds(1f);
         //player_collider.enabled = true;
+        yield return new WaitForSeconds(1f);
+
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "plat")
+        {
+            transform.parent = collision.transform;
+        }
+    }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {  
+        transform.parent = null;
+    }
 
 
 
