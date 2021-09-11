@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Menu : MonoBehaviour
 {
     [Header("game object buttons")]
+    public bool gamemenu = false;
     public GameObject pause;
     public GameObject options;
     public GameObject firstButton;
@@ -14,7 +15,7 @@ public class Menu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && gamemenu)
         {
             PauseUnpause();
         }
