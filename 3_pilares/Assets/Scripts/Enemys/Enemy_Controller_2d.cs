@@ -31,14 +31,20 @@ public class Enemy_Controller_2d : MonoBehaviour
     public float y;
 
     [Header("Enemy Attack settings")]
-    public int attack_damage = 100;
+    public int attack_damage = 1;
     [Range(0, 10)]public float attack_rate;
     [Range(0, 10f)] public float attack_range = .5f;
     public LayerMask playerlayer;
     float next_attack_time = 0f;
 
+    [Header("Enemy Healt")]
+    private int healt = 1;
+    int current_healt;
+    public static bool attack_player = true;
+
     private void Awake()
     {
+        current_healt = healt;
         pat_faceDirection = pat_Right;
         Base_Scale = transform.localScale;
         Enemy_rig = GetComponent<Rigidbody2D>();
@@ -48,7 +54,7 @@ public class Enemy_Controller_2d : MonoBehaviour
     private void FixedUpdate()
     {
         float distance = Vector2.Distance(transform.position, Player.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
         if (detection == false)
         {
             Enemy_Patrol();
@@ -193,9 +199,19 @@ public class Enemy_Controller_2d : MonoBehaviour
 
     private void Attack()
     {
-        E_animator.SetTrigger("attack");
-        Collider2D[] hitplayer = Physics2D.OverlapCircleAll(attack_point.position, attack_range, playerlayer);
-        return;
+        if (attack_player)
+        {
+            E_animator.SetTrigger("attack");
+            Collider2D[] hitplayer = Physics2D.OverlapCircleAll(attack_point.position, attack_range, playerlayer);
+            foreach (Collider2D player in hitplayer)
+            {
+                Debug.Log(player);
+                player.GetComponent<player_move>().TakeDamage_Player(attack_damage);
+            }
+
+            return;
+        }
+;
     }
 
     private void OnDrawGizmos()
@@ -206,4 +222,23 @@ public class Enemy_Controller_2d : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attack_point.position, attack_range);
     }
+
+    public void TakeDamage_Enemy(int damge)
+    {
+        current_healt -= damge;
+        Debug.Log(current_healt); 
+        attack_player = false;
+        if (current_healt == 0)
+        {
+
+            die();
+        }
+    }
+
+    private void die()
+    {
+        E_animator.SetBool("Die", true);
+        Destroy(this.gameObject,1);
+    }
+
 }

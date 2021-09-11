@@ -21,8 +21,13 @@ public class player_move : MonoBehaviour
     [Header("Animator Settings")]
     public Animator player_animator;
 
+    [Header("Healt")]
+    private int healt = 1;
+    public int current_healt;
+
     private void Start()
     {
+        current_healt = healt;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         player_rig = GetComponent<Rigidbody2D>();
@@ -103,6 +108,23 @@ public class player_move : MonoBehaviour
         player_collider.enabled = true;
     }
 
+    public void TakeDamage_Player(int damge)
+    {
+        current_healt -= damge;
+        Debug.Log(current_healt);
+        Enemy_Controller_2d.attack_player = false;
+        if (current_healt == 0)
+        {
+
+            die();
+        }
+    }
+
+    private void die()
+    {
+        gameObject.SetActive(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "plat")
@@ -115,7 +137,4 @@ public class player_move : MonoBehaviour
     {  
         transform.parent = null;
     }
-
-
-
 }
