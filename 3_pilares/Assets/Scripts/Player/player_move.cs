@@ -23,6 +23,8 @@ public class player_move : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         player_rig = GetComponent<Rigidbody2D>();
         player_collider = GetComponent<CapsuleCollider2D>();
     }

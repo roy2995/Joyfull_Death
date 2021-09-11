@@ -13,6 +13,12 @@ public class Menu : MonoBehaviour
     public GameObject optiosnFirstbutton;
     public GameObject optiosnClosetbutton;
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && gamemenu)
