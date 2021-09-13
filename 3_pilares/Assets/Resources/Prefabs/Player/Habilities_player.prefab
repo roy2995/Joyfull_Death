@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5974083360363530016}
   - component: {fileID: 5974083360363530019}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Habilities_player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5974083360550495672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Attack_point
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5974083360921141126}
   - component: {fileID: 5974083360921141129}
   - component: {fileID: 3533215610676376280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,6 +245,7 @@ MonoBehaviour:
   DashDistance: 183
   player_collider: {fileID: 3533215610676376280}
   player_animator: {fileID: 5974083360921141129}
+  current_healt: 0
 --- !u!114 &5974083360921141126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5974083361105729017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground_Check
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -340,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5974083361342318934}
   - component: {fileID: 5974083361342318937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CM vcam1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5974083361530437272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Celling_chek
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -438,7 +439,7 @@ GameObject:
   - component: {fileID: 5974083361816488985}
   - component: {fileID: 5974083361816488983}
   - component: {fileID: 5974083361816488982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
