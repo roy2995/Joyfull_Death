@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Roy_test/Roy_WorkZone.unity
     guid: b2c90a3d77995db4fb8a47e435d49f65
+  - enabled: 1
+    path: Assets/Scenes/Mentor_Scene.unity
+    guid: aa4a1c6b1723d5e4c8cb65cac9c8324b
   m_configObjects: {}
