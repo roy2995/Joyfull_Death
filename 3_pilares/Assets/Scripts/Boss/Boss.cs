@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform player;
+    public bool isflipped = true;
 
-    // Update is called once per frame
-    void Update()
+    public void lookatplayer()
     {
-        
+        Vector3 flipped = transform.localScale;
+        flipped.z *= -1f;
+
+        if(transform.position.x > player.position.x && isflipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0, 180, 0);
+            isflipped = false;
+        }
+        else if(transform.position.x < player.position.x && !isflipped)
+        {
+            transform.localScale = flipped;
+            transform.Rotate(0, 180, 0);
+            isflipped = true;
+        }
     }
 }
