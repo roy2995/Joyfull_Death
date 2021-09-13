@@ -227,7 +227,7 @@ public class Enemy_Controller_2d : MonoBehaviour
     {
         current_healt -= damge;
         Debug.Log(current_healt); 
-        attack_player = false;
+        //attack_player = false;
         if (current_healt == 0)
         {
 
