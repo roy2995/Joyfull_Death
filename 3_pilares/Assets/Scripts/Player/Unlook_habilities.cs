@@ -9,8 +9,4 @@ public class Unlook_habilities : MonoBehaviour
     public static bool dash = false;
     public static bool shurikens = false;
     public GameObject player_habilites;
-    private void Update()
-    {
-        DontDestroyOnLoad(player_habilites);
-    }
 }

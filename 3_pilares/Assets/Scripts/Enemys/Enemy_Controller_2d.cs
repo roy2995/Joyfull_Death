@@ -42,6 +42,10 @@ public class Enemy_Controller_2d : MonoBehaviour
     int current_healt;
     public static bool attack_player = true;
 
+    [Header("audio")]
+    public AudioSource audio;
+    public AudioClip die_sound;
+
     private void Awake()
     {
         current_healt = healt;
@@ -226,7 +230,9 @@ public class Enemy_Controller_2d : MonoBehaviour
     public void TakeDamage_Enemy(int damge)
     {
         current_healt -= damge;
-        Debug.Log(current_healt); 
+        Debug.Log(current_healt);
+        audio.clip = die_sound;
+        audio.Play();
         //attack_player = false;
         if (current_healt == 0)
         {

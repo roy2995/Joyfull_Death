@@ -300,6 +300,8 @@ GameObject:
   - component: {fileID: 565506579}
   - component: {fileID: 565506578}
   - component: {fileID: 565506577}
+  - component: {fileID: 565506580}
+  - component: {fileID: 565506581}
   m_Layer: 9
   m_Name: Sword_Ative
   m_TagString: Player
@@ -333,7 +335,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.9953165, y: 2.7361393}
+  m_Offset: {x: 0.18539226, y: 2.7361393}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -344,7 +346,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.990633, y: 20.990665}
+  m_Size: {x: 7.604183, y: 20.990665}
   m_EdgeRadius: 0
 --- !u!4 &565506579
 Transform:
@@ -360,6 +362,125 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565506580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565506576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c8fdb0740f8314a859f5597682ac4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Naruto
+    sentenceList:
+    - "Empezamos por lo b\xE1sico, el uso de tu katana "
+    - para usarla debes presionar click derecho
+    - "con esto podr\xE1s defenderte de los enemigos que se te interpongan"
+  dialoguePanel: {fileID: 1847387668}
+  displayText: {fileID: 424113945}
+  SentenceSpeed: 0.05
+  speakSound: {fileID: 8300000, guid: f3264f11b90453a41bfaa215bdca7d7c, type: 3}
+  CanSpeak: 0
+--- !u!82 &565506581
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565506576}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.063
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &695630944
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +576,7 @@ GameObject:
   - component: {fileID: 844351135}
   - component: {fileID: 844351134}
   - component: {fileID: 844351133}
+  - component: {fileID: 844351138}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -578,6 +700,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &844351138
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844351132}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -4327212437377134118, guid: 47751f23727f52a4eb661b3b6ed7ab29, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 3715c537437ea924e833c9f3592fe2e2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &853458265
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,24 +1160,21 @@ MonoBehaviour:
   dialogue:
     name: Naruto
     sentenceList:
-    - "Kento, una vez m\xE1s debo pedir de tu ayuda."
+    - "Kento, una vez m\xE1s debo pedir de tu ayuda. (pulsa E para continuar)"
     - "La aldea de las flores de loto est\xE1n siendo atacadas por criminales."
     - Debo pedirte que te deshagas de ellos, para reunir la paz que estaba dentro
       de nuestra tierra.
     - "Una vez venzas a estos criminales, te ense\xF1ar\xE9 nuevos trucos que podr\xE1s
       usar en tu camino."
     - "Esto te ayudar\xE1 a facilitarte el trabajo."
-    - 'No hagas esto por mi Kento, hazlo por las personas de nuestro pueblo quien
-      depende de estas flores
-
-      curativas.'
-    - "Sin estas flores de roci\xF3, nuestra aldea estar\xEDa llena de enfermedades\u2026"
+    - hazlo por las personas de nuestro pueblo quien depende de estas flores.
+    - "Sin estas flores de loto, nuestra aldea estar\xEDa llena de inpurezas y denshonra."
     - Por favor Kento, hazlo por el pueblo.
     - "Estar\xE9 observando desde aqu\xED tu viaje."
   dialoguePanel: {fileID: 1847387668}
   displayText: {fileID: 424113945}
-  SentenceSpeed: 0.1
-  speakSound: {fileID: 8300000, guid: 3282c4a060acd664a812a1eeb215415d, type: 3}
+  SentenceSpeed: 0.05
+  speakSound: {fileID: 8300000, guid: f3264f11b90453a41bfaa215bdca7d7c, type: 3}
   CanSpeak: 0
 --- !u!58 &1001851197
 CircleCollider2D:
@@ -1005,10 +1220,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001851193}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3282c4a060acd664a812a1eeb215415d, type: 3}
+  OutputAudioMixerGroup: {fileID: -695393719247437455, guid: 0dc25697c675527458b221b82117c86c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: f3264f11b90453a41bfaa215bdca7d7c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.063
   m_Pitch: 1
@@ -1542,7 +1757,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867094056}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -1693,6 +1908,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5974083360921141126, guid: fb00d1e3a26cab4429650cb993244e0f, type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 2089834086}
     - target: {fileID: 5974083360921141128, guid: fb00d1e3a26cab4429650cb993244e0f, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -1788,6 +2007,77 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1974653048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974653051}
+  - component: {fileID: 1974653050}
+  - component: {fileID: 1974653049}
+  m_Layer: 9
+  m_Name: end
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974653049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974653048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a174a346ea348804484fe819a1b3af5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreecena: Level_1
+--- !u!61 &1974653050
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974653048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 30.023924, y: 2.7361393}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 61.047848, y: 20.990665}
+  m_EdgeRadius: 0
+--- !u!4 &1974653051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974653048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 58.31, y: -14.974092, z: -42.185436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2051790076
 GameObject:
@@ -1888,6 +2178,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 844351132}
   parallaxEffect: 0.2
+--- !u!82 &2089834086 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7754716477427862968, guid: fb00d1e3a26cab4429650cb993244e0f, type: 3}
+  m_PrefabInstance: {fileID: 1919808408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118498462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,8 +2194,10 @@ GameObject:
   - component: {fileID: 2118498465}
   - component: {fileID: 2118498464}
   - component: {fileID: 2118498463}
+  - component: {fileID: 2118498467}
+  - component: {fileID: 2118498466}
   m_Layer: 9
-  m_Name: Sword_Ative (1)
+  m_Name: Dash_Ative
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1932,7 +2229,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.9953165, y: 2.7361393}
+  m_Offset: {x: 1.7437153, y: 2.7361393}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1943,7 +2240,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.990633, y: 20.990665}
+  m_Size: {x: 4.4874306, y: 20.990665}
   m_EdgeRadius: 0
 --- !u!4 &2118498465
 Transform:
@@ -1959,3 +2256,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2118498466
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118498462}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.063
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2118498467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118498462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c8fdb0740f8314a859f5597682ac4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentenceList:
+    - "Es evidente que habr\xE1 situaciones complicadas solo atacando defrente"
+    - "te ense\xF1ar\xE9 la t\xE9cnica del \"DASH\" en la cual podr\xE1s esquivar
+      o moverte \r\nde manera r\xE1pida y eficiente"
+    - "pulsa 2 veces la A para hacer \"DASH\" hacia atr\xE1s y D hacia adelante"
+  dialoguePanel: {fileID: 1847387668}
+  displayText: {fileID: 424113945}
+  SentenceSpeed: 0.05
+  speakSound: {fileID: 8300000, guid: f3264f11b90453a41bfaa215bdca7d7c, type: 3}
+  CanSpeak: 0

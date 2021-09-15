@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Menu : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class Menu : MonoBehaviour
     public GameObject firstButton;
     public GameObject optiosnFirstbutton;
     public GameObject optiosnClosetbutton;
+    public AudioMixerSnapshot paused;
+    public AudioMixerSnapshot unpaused;
 
     private void Awake()
     {
@@ -34,11 +38,12 @@ public class Menu : MonoBehaviour
             pause.SetActive(true);
             Time.timeScale = 0;
             EventSystem.current.SetSelectedGameObject(null);
-
+            paused.TransitionTo(0.01f);
             EventSystem.current.SetSelectedGameObject(firstButton);
         }
         else
         {
+            unpaused.TransitionTo(0.01f);
             pause.SetActive(false);
             Time.timeScale = 1;
             options.SetActive(false);

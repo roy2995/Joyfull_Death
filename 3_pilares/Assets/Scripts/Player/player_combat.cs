@@ -9,6 +9,8 @@ public class player_combat : MonoBehaviour
     public Transform attack_point;
     public int attack_damge = 5;
     public float attack_rate = 2f;
+    public AudioClip soundattack;
+    public AudioSource audio;
     [Range(0, 10f)] public float attack_range = 0.5f;
     public LayerMask enemylayer;
     float next_attack_time = 0f;
@@ -29,6 +31,8 @@ public class player_combat : MonoBehaviour
 
     void attack()
     {
+        audio.clip = soundattack;
+        audio.Play();
         animator.SetTrigger("attack");
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attack_point.position,attack_range,enemylayer);

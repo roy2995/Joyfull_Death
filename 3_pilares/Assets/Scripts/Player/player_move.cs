@@ -17,6 +17,8 @@ public class player_move : MonoBehaviour
     KeyCode lastKeyCode;
     Rigidbody2D player_rig;
     public CapsuleCollider2D player_collider;
+    public AudioSource dash_sound;
+    public AudioClip dash_effect;
 
     [Header("Animator Settings")]
     public Animator player_animator;
@@ -72,6 +74,8 @@ public class player_move : MonoBehaviour
                 Debug.Log("enta en A");
                 player_animator.SetTrigger("Dashing");
                 player_collider.enabled = false;
+                dash_sound.clip = dash_effect;
+                dash_sound.Play();
                 StartCoroutine(dash(-1f));
             }
             else
@@ -89,6 +93,8 @@ public class player_move : MonoBehaviour
                 //dash active
                 player_animator.SetTrigger("Dashing");
                 player_collider.enabled = false;
+                dash_sound.clip = dash_effect;
+                dash_sound.Play();
                 StartCoroutine(dash(1f));
             }
             else
@@ -106,6 +112,7 @@ public class player_move : MonoBehaviour
         player_rig.AddForce(new Vector2(DashDistance * direction,0),ForceMode2D.Impulse);
         yield return new WaitForSeconds(.1f);
         player_collider.enabled = true;
+        //dash_sound.Pause();
     }
 
     public void TakeDamage_Player(int damge)
