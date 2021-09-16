@@ -8,6 +8,7 @@ public class levelLoader : MonoBehaviour
     [Header("Loader Scene")]
     public Animator transition;
     public float transitiontime = 1;
+    public string name_ecena;
 
     public void LoadNextLevel()
     {
@@ -25,5 +26,10 @@ public class levelLoader : MonoBehaviour
         transition.SetTrigger("start");
         yield return new WaitForSeconds(transitiontime);
         SceneManager.LoadScene(index);
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(name_ecena);
     }
 }

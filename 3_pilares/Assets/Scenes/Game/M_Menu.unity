@@ -1888,7 +1888,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1497110425}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1532985882}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1497110425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,8 +2096,8 @@ MonoBehaviour:
   firstButton: {fileID: 2061554381}
   optiosnFirstbutton: {fileID: 2017473340}
   optiosnClosetbutton: {fileID: 1525897284}
-  paused: {fileID: 0}
-  unpaused: {fileID: 0}
+  paused: {fileID: -7626303948570969026, guid: 47751f23727f52a4eb661b3b6ed7ab29, type: 2}
+  unpaused: {fileID: 709887316889659641, guid: 47751f23727f52a4eb661b3b6ed7ab29, type: 2}
 --- !u!1 &1575391310
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ public class player_move : MonoBehaviour
     [Header("Healt")]
     private int healt = 1;
     public int current_healt;
+    public GameObject restart;
 
     private void Start()
     {
@@ -122,7 +123,9 @@ public class player_move : MonoBehaviour
         Enemy_Controller_2d.attack_player = false;
         if (current_healt == 0)
         {
-
+            restart.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             die();
         }
     }

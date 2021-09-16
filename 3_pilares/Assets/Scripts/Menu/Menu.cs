@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -64,5 +65,15 @@ public class Menu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
         EventSystem.current.SetSelectedGameObject(firstButton);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void returnar()
+    {
+        SceneManager.LoadScene("M_Menu");
     }
 }
