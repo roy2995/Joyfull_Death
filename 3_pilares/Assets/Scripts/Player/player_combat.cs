@@ -28,7 +28,6 @@ public class player_combat : MonoBehaviour
         }
     }
 
-
     void attack()
     {
         audio.clip = soundattack;
