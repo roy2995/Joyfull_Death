@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Player_Control : MonoBehaviour
 {
-    [Header("Player Inputs")]
-    [SerializeField] private PlayerInput inputs;
-    private Vector3 inputvector;
+    [Header("Player Movement")]
+    public CharacterController controller;
+    public float Speed = 100f;
 
-    private void OnMove(InputValue value)
+    void Update()
     {
-        Vector2 inputMove = value.Get<Vector2>();
-        inputvector = new Vector3(inputMove.x, 0, inputMove.y);
+        var horizontal = Input.GetAxisRaw("Horizontal");
+        var vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+        if(direction.magnitude >= 0.01f)
+        {
+            controller.Move(direction * Speed * Time.deltaTime);
+        }
     }
-
 }
