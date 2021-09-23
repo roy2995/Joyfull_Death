@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 5412a51862c94874d90798d100a23e3b, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1001 &13474594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13074,12 +13074,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498237147}
-  - {fileID: 1277856501}
   - {fileID: 1199767301}
   - {fileID: 1609989165}
   - {fileID: 1717763824}
   - {fileID: 1815980466}
   - {fileID: 423564344}
+  - {fileID: 1277856501}
   - {fileID: 402609939}
   - {fileID: 1186313810}
   - {fileID: 860179519}
@@ -14729,7 +14729,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!156049354 &813694552
 Grid:

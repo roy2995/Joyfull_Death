@@ -15,7 +15,7 @@ public class @Player : IInputActionCollection, IDisposable
     ""name"": ""Player"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""Playerr"",
             ""id"": ""c27edbd3-0bb2-48f3-9197-ab0c889f96b5"",
             ""actions"": [
                 {
@@ -80,7 +80,7 @@ public class @Player : IInputActionCollection, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""cd93aec5-8c4d-4eae-ac97-28eb2f6508ef"",
-                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""path"": ""<DualShockGamepad>/leftStick/up"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -91,7 +91,7 @@ public class @Player : IInputActionCollection, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""cd5a0e80-5677-47d0-8947-0bacebd3d000"",
-                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""path"": ""<DualShockGamepad>/leftStick/down"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -102,7 +102,7 @@ public class @Player : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""fff0ddad-2827-4ec6-9ac8-a3681bc024cc"",
-                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""path"": ""<DualShockGamepad>/leftStick/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -113,7 +113,7 @@ public class @Player : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""3d3ed3e7-c6db-4894-89c2-64660edd8866"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""path"": ""<DualShockGamepad>/leftStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -126,11 +126,11 @@ public class @Player : IInputActionCollection, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Grab = m_Player.FindAction("Grab", throwIfNotFound: true);
-        m_Player_Put = m_Player.FindAction("Put", throwIfNotFound: true);
+        // Playerr
+        m_Playerr = asset.FindActionMap("Playerr", throwIfNotFound: true);
+        m_Playerr_Move = m_Playerr.FindAction("Move", throwIfNotFound: true);
+        m_Playerr_Grab = m_Playerr.FindAction("Grab", throwIfNotFound: true);
+        m_Playerr_Put = m_Playerr.FindAction("Put", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -177,39 +177,39 @@ public class @Player : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Grab;
-    private readonly InputAction m_Player_Put;
-    public struct PlayerActions
+    // Playerr
+    private readonly InputActionMap m_Playerr;
+    private IPlayerrActions m_PlayerrActionsCallbackInterface;
+    private readonly InputAction m_Playerr_Move;
+    private readonly InputAction m_Playerr_Grab;
+    private readonly InputAction m_Playerr_Put;
+    public struct PlayerrActions
     {
         private @Player m_Wrapper;
-        public PlayerActions(@Player wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Grab => m_Wrapper.m_Player_Grab;
-        public InputAction @Put => m_Wrapper.m_Player_Put;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public PlayerrActions(@Player wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Playerr_Move;
+        public InputAction @Grab => m_Wrapper.m_Playerr_Grab;
+        public InputAction @Put => m_Wrapper.m_Playerr_Put;
+        public InputActionMap Get() { return m_Wrapper.m_Playerr; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(PlayerrActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerrActions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_PlayerrActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Grab.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrab;
-                @Grab.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrab;
-                @Grab.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrab;
-                @Put.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPut;
-                @Put.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPut;
-                @Put.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPut;
+                @Move.started -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnMove;
+                @Grab.started -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnGrab;
+                @Grab.performed -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnGrab;
+                @Grab.canceled -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnGrab;
+                @Put.started -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnPut;
+                @Put.performed -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnPut;
+                @Put.canceled -= m_Wrapper.m_PlayerrActionsCallbackInterface.OnPut;
             }
-            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_PlayerrActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Move.started += instance.OnMove;
@@ -224,8 +224,8 @@ public class @Player : IInputActionCollection, IDisposable
             }
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
-    public interface IPlayerActions
+    public PlayerrActions @Playerr => new PlayerrActions(this);
+    public interface IPlayerrActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnGrab(InputAction.CallbackContext context);

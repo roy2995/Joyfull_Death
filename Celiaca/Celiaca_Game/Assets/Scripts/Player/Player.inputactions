@@ -2,7 +2,7 @@
     "name": "Player",
     "maps": [
         {
-            "name": "Player",
+            "name": "Playerr",
             "id": "c27edbd3-0bb2-48f3-9197-ab0c889f96b5",
             "actions": [
                 {
@@ -67,7 +67,7 @@
                 {
                     "name": "up",
                     "id": "cd93aec5-8c4d-4eae-ac97-28eb2f6508ef",
-                    "path": "<Gamepad>/leftStick/up",
+                    "path": "<DualShockGamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -78,7 +78,7 @@
                 {
                     "name": "down",
                     "id": "cd5a0e80-5677-47d0-8947-0bacebd3d000",
-                    "path": "<Gamepad>/leftStick/down",
+                    "path": "<DualShockGamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -89,7 +89,7 @@
                 {
                     "name": "left",
                     "id": "fff0ddad-2827-4ec6-9ac8-a3681bc024cc",
-                    "path": "<Gamepad>/leftStick/left",
+                    "path": "<DualShockGamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -100,7 +100,7 @@
                 {
                     "name": "right",
                     "id": "3d3ed3e7-c6db-4894-89c2-64660edd8866",
-                    "path": "<Gamepad>/leftStick/right",
+                    "path": "<DualShockGamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
