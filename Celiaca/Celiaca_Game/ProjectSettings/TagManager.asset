@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - _isSitting
-  - Cliente
-  - Silla
+  tags: []
   layers:
   - Default
   - TransparentFX
