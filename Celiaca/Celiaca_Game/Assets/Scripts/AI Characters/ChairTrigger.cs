@@ -12,11 +12,6 @@ public class ChairTrigger : MonoBehaviour
         PopUpNoty.SetActive(false);
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider npc)
     {
         if(npc.tag == "AIbot")
