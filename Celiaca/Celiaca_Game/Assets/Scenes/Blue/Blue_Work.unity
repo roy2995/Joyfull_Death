@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018654893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2a2f6a153bae3c4092c21dc877b2415, type: 3}
   m_Name: 
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.03424208, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2781,6 +2781,7 @@ GameObject:
   - component: {fileID: 7335630170419368306}
   - component: {fileID: 7335630170419368305}
   - component: {fileID: 7335630170419368304}
+  - component: {fileID: 7335630170419368312}
   m_Layer: 0
   m_Name: NPC_Ref 1
   m_TagString: AIbot
@@ -2810,6 +2811,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 5
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7335630170419368312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335630170419368310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33b08bcc1f28484181f69e63a434c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _duration: 5
+  _rawImage: {fileID: 672808449311321526}
+  color1: {r: 0.14971161, g: 1, b: 0, a: 0}
+  color2: {r: 1, g: 0, b: 0, a: 0}
 --- !u!23 &7392708282742634714
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColorChangerTest : MonoBehaviour
 {
     [SerializeField]
     float _duration;
-    Material targetMat;
+    public RawImage _rawImage;
     private bool _isSit;
     float Timer = 5.0f;
-    Color color1, color2;
+    public Color color1, color2;
 
     void Start()
     {
-        color1 = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-        color2 = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+        color1 = new Color(0f, 1f, 0);
+        color2 = new Color(1f, 0f, 0f);
     }
 
 
@@ -22,6 +23,6 @@ public class ColorChangerTest : MonoBehaviour
     {
         Color color = Color.Lerp(color1, color2, Timer);
         Timer += Time.deltaTime / _duration;
-        Camera.main.backgroundColor = color;
+        Color _rawImage = color;
     }
 }
