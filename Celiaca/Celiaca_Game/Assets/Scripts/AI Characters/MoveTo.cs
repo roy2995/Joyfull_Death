@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class MoveTo : MonoBehaviour
 {
 
+    //No tiene mucha ciencia explicar pero lo que hace es solo mover al navmesh agent al punto que quiero.
+
     public Transform Destination;
     NavMeshAgent agent;
 
