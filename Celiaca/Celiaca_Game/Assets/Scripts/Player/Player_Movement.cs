@@ -19,7 +19,7 @@ public class Player_Movement : MonoBehaviour
     {
         float Horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(Vertical, 0f, Horizontal*-1).normalized;
+        Vector3 direction = new Vector3(Horizontal, 0f, Vertical).normalized;
         if (direction.magnitude >= .1f)
         {
             float tragetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
