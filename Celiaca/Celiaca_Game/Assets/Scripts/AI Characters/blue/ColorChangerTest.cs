@@ -6,23 +6,25 @@ using UnityEngine.UI;
 public class ColorChangerTest : MonoBehaviour
 {
     [SerializeField]
-    float _duration;
+    public float _duration;
     public RawImage _rawImage;
     private bool _isSit;
-    float Timer = 5.0f;
-    public Color color1, color2;
-
+    public float Timer = 0f;
+    public Color currentColor, startColor, endColor;
     void Start()
     {
-        color1 = new Color(0f, 1f, 0);
-        color2 = new Color(1f, 0f, 0f);
+        startColor = new Color(0f, 1f, 0);
+        endColor = new Color(1f, 0f, 0f);
     }
 
 
     void Update()
     {
-        Color color = Color.Lerp(color1, color2, Timer);
-        Timer += Time.deltaTime / _duration;
-        Color _rawImage = color;
+        if(Timer <= _duration)
+        {
+            Timer += Time.deltaTime;
+            currentColor = Color.Lerp(startColor, endColor, Timer / _duration);
+            _rawImage.color = currentColor;
+        }
     }
 }

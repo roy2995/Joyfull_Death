@@ -168,7 +168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &172063863
 Transform:
   m_ObjectHideFlags: 0
@@ -2823,7 +2823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!195 &7335630170419368311
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2860,8 +2860,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _duration: 5
   _rawImage: {fileID: 672808449311321526}
-  color1: {r: 0.14971161, g: 1, b: 0, a: 0}
-  color2: {r: 1, g: 0, b: 0, a: 0}
+  Timer: 0
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!23 &7392708282742634714
 MeshRenderer:
   m_ObjectHideFlags: 0
