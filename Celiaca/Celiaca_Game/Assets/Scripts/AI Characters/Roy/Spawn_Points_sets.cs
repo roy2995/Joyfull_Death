@@ -12,8 +12,8 @@ public class Spawn_Points_sets : MonoBehaviour
     public static int client_count;
     public int freeShairs;
     private int rand_spawn;
-    public static bool open_spawn_1;
-    public static bool open_spawn_2;
+    public static bool open_spawn_1 = false;
+    public static bool open_spawn_2 = false;
 
     private void Start()
     {
@@ -25,8 +25,9 @@ public class Spawn_Points_sets : MonoBehaviour
     {
         if(client_count < freeShairs)
         {
-            spawnselect();
+            
         }
+        spawnselect();
     }
 
 
@@ -36,11 +37,11 @@ public class Spawn_Points_sets : MonoBehaviour
         rand_spawn = Random.Range(0, 1);
         if (rand_spawn == 0)
         {
-            
+            open_spawn_1 = true;
         }
         else if(rand_spawn == 1)
         {
-
+            open_spawn_2 = true;
         }
     }
 

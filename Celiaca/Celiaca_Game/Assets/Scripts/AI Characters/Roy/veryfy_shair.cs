@@ -6,17 +6,24 @@ public class veryfy_shair : MonoBehaviour
 {
     [Header("shairs")]
     public Transform[] chairs_free;
-    public BoxCollider[] shairs_ocuped;
+    public bool[] shairs_ocuped;
     private target_shair target_;
     Transform target;
     private void Start()
     {
         target_ = GetComponent<target_shair>();
+        target_.ref_manager = GetComponent<veryfy_shair>();
+        if(shairs_ocuped[0] == false)
+        {
+            target_.silla_escogida = 0;
+            target_.NPC.SetDestination(chairs_free[0].position);
+        }
+
     }
 
     private void Update()
     {
-        target_.Go_shair(free);
+
     }
 
     public Transform free()

@@ -7,40 +7,57 @@ public class target_shair : MonoBehaviour
 {
     [Header("NPC Settings")]
     private Transform shair_dest;
-    public Transform[] shairs_free;
     public NavMeshAgent NPC;
-    private int count;
+    public int silla_escogida;
+    public veryfy_shair ref_manager;
+    public bool satifecho = false;
 
     private void Start()
     {
         NPC = GetComponent<NavMeshAgent>();
-        count = shairs_free.Length;
+        
     }
 
     private void Update()
     {
-        //Go_shair(veryfy_shair);
+        if (isInDestination() && satifecho == false)
+        {
+            //se va desde que llega
+            ref_manager.shairs_ocuped[silla_escogida] = false;
+            NPC.SetDestination(new Vector3(0, 0, 0));
+            satifecho = true;
+        }
     }
 
-    public void Go_shair(Transform position_shair)
+    public void Go_shair()
     {
-        foreach(Transform free in shairs_free)
+        /* if(free.position == position_shair.position)
+         {
+             bool itsfree = free.GetComponent<veryfy_shair>();
+             if (itsfree == true)
+             {
+                 NPC.SetDestination(position_shair.position);
+             }
+             else
+             {
+                 arrayshair.oderdestination = true;
+             }*/
+    }
+
+    public bool isInDestination()
+    {
+        if (!NPC.pathPending)
         {
-            if(free.position == position_shair.position)
+            if (NPC.remainingDistance <= NPC.stoppingDistance)
             {
-                /*bool itsfree = free.GetComponent<veryfy_shair>();
-                if (itsfree == true)
+                if (!NPC.hasPath || NPC.velocity.sqrMagnitude == 0f)
                 {
-                    NPC.SetDestination(position_shair.position);
+                    return true;
                 }
-                else
-                {
-                    arrayshair.oderdestination = true;
-                }*/
             }
         }
-        
 
+        return false;
     }
 
 }
