@@ -23,7 +23,7 @@ public class target_shair : MonoBehaviour
         if (isInDestination() && satifecho == false)
         {
             //se va desde que llega
-            ref_manager.shairs_ocuped[silla_escogida] = false;
+            //ref_manager.shairs_ocuped[silla_escogida] = false;
             NPC.SetDestination(new Vector3(0, 0, 0));
             satifecho = true;
         }

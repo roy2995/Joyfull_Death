@@ -16,7 +16,7 @@ public class veryfy_shair : MonoBehaviour
 
     private void Update()
     {
-        target_.Go_shair(free());
+        //target_.Go_shair(free());
     }
 
     public Transform free()
