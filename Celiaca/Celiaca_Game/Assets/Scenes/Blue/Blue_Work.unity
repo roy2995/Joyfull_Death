@@ -183,6 +183,7 @@ Transform:
   - {fileID: 685714695}
   - {fileID: 463629380}
   - {fileID: 2018654894}
+  - {fileID: 1851166465278727258}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -229,7 +230,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251605049
 GameObject:
@@ -1294,7 +1295,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247842465
 GameObject:
@@ -2110,8 +2111,8 @@ Transform:
   - {fileID: 1851166466678941373}
   - {fileID: 1851166464921441104}
   - {fileID: 1851166466623454498}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 172063863}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1851166465278727265
 GameObject:
@@ -2132,7 +2133,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1851166465278727266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,7 +3019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f471ed589f00454eb177c3cbd9182f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PopUpNoty: {fileID: 0}
+  PopUpNoty: {fileID: 502967851}
 --- !u!23 &7324409579736712559
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3158,8 +3159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33b08bcc1f28484181f69e63a434c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _duration: 5
-  _rawImage: {fileID: 0}
+  _duration: 40
+  _rawImage: {fileID: 1635999065}
   Timer: 0
   currentColor: {r: 0, g: 0, b: 0, a: 0}
   startColor: {r: 0, g: 0, b: 0, a: 0}

@@ -17,8 +17,7 @@ public class ColorChangerTest : MonoBehaviour
         endColor = new Color(1f, 0f, 0f);
     }
 
-
-    void Update()
+    /*void Update()
     {
         if(Timer <= _duration)
         {
@@ -26,5 +25,38 @@ public class ColorChangerTest : MonoBehaviour
             currentColor = Color.Lerp(startColor, endColor, Timer / _duration);
             _rawImage.color = currentColor;
         }
+    }*/
+
+    void ColorChangin()
+    {
+        if (Timer <= _duration)
+        {
+            Timer += Time.deltaTime;
+            currentColor = Color.Lerp(startColor, endColor, Timer / _duration);
+            _rawImage.color = currentColor;
+        }
+    }
+
+    private void OnTriggerStay(Collider sitting)
+    {
+        if (gameObject.tag == "Client")
+        {
+            _isSit = true;
+            StartCoroutine("WaitingTime");
+        }
+        else
+        {
+            _isSit = false;
+            StopCoroutine("WaitingTime");
+        }    
+    }
+
+    IEnumerator WaitingTime()
+    {
+        if (_isSit == true)
+        {
+            ColorChangin();
+        }
+        yield return new WaitForSeconds(1f);
     }
 }
