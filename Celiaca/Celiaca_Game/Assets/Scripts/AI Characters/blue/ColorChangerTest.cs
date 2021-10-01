@@ -7,7 +7,7 @@ public class ColorChangerTest : MonoBehaviour
 {
     [SerializeField]
     public float _duration;
-    public RawImage _rawImage;
+    public Image _rawImage;
     private bool _isSit;
     public float Timer = 0f;
     public Color currentColor, startColor, endColor;
