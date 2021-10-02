@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class ChairTrigger : MonoBehaviour
 {
-    public RequestManager _escribirPedido;
+    private RequestManager _escribirPedido;
+    private ColorChangerTest _ResetColor;
 
     public string[] platillos;
 
@@ -31,6 +32,7 @@ public class ChairTrigger : MonoBehaviour
     {
         //Se mantiene apagado hasta que se siente
         PopUpNoty.SetActive(false);
+        _Paper.SetActive(false);
 
         _pedido = new Queue<string>();
         _AudioS = GetComponent<AudioSource>();
@@ -69,6 +71,7 @@ public class ChairTrigger : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                _takeOrder = true;
                 Debug.Log("Se inicio a tomar la orden");
                 DisplayNextSentence();
             }
@@ -97,6 +100,7 @@ public class ChairTrigger : MonoBehaviour
 
     IEnumerator TyperSentences(string sentence)
     {
+        _Paper.SetActive(true);
         _texto.text = "";
 
         foreach(char letra in sentence.ToCharArray())

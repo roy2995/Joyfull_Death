@@ -47,17 +47,26 @@ public class ColorChangerTest : MonoBehaviour
             _isSit = true;
             StartCoroutine("WaitingTime");
         }
-        else if(gameObject.tag == "Player")
-        {
-
-        }
         else
         {
             _isSit = false;
             StopCoroutine("WaitingTime");
-        } 
-        
-        
+        }
+
+        //Esta parte del trigger se supuso que al precionar E reiniciaria el tiempo.
+        if (gameObject.CompareTag("Player"))
+        {
+            if (_ChairWaiting._takeOrder == true)
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    {
+                        Debug.Log("Se ha reiniciado el tiempo?");
+                        Timer = 0f;
+                    }
+                }
+        }
+
+
     }
 
     IEnumerator WaitingTime()
