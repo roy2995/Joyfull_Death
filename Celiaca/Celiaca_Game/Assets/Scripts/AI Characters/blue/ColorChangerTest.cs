@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class ColorChangerTest : MonoBehaviour
 {
+
+    public ChairTrigger _ChairWaiting;
+
     [SerializeField]
     public float _duration;
     public Image _rawImage;
@@ -44,11 +47,17 @@ public class ColorChangerTest : MonoBehaviour
             _isSit = true;
             StartCoroutine("WaitingTime");
         }
+        else if(gameObject.tag == "Player")
+        {
+
+        }
         else
         {
             _isSit = false;
             StopCoroutine("WaitingTime");
-        }    
+        } 
+        
+        
     }
 
     IEnumerator WaitingTime()
