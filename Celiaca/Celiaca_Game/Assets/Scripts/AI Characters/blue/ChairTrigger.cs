@@ -18,7 +18,7 @@ public class ChairTrigger : MonoBehaviour
     // Si detecta al player entrar a la silla, comenzara la corrutina de Pop up.
     private void OnTriggerEnter(Collider npc)
     {
-        if(npc.tag == "AIbot")
+        if(npc.tag == "Client")
         {
             Debug.Log("Is Sitting on the chair");
             StartCoroutine("PopupTimerDelay");
@@ -30,7 +30,7 @@ public class ChairTrigger : MonoBehaviour
     {
         PopUpNoty.SetActive(false);
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(2f);
         PopUpNoty.SetActive(true);
     }
 }
