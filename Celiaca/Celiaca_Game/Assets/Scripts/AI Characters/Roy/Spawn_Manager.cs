@@ -50,7 +50,7 @@ public class Spawn_Manager : MonoBehaviour
         Debug.Log(sillas[shair_num]);
         if (sillas[shair_num] == false)
         {
-            spawners[shair_num] = Instantiate(clients[client_num], spawners[shair_num].transform.position, Quaternion.identity);            
+            Instantiate(clients[client_num], spawners[shair_num].transform.position, Quaternion.identity);            
             sillas[shair_num] = true;
             clients[client_num].GetComponent<npc_controller>().num_shair = shair_num;
 
