@@ -10,11 +10,13 @@ public class Player_Movement : MonoBehaviour
     public float turnSmoothTime = .1f;
     private float turnsmoothvelocity;
 
-    //[Header("timer")]
-    //[SerializeField] private timer timer;
+    [Header("timer")]
+    [SerializeField] private timer timer;
+    public int time;
+
     private void Start()
     {
-        //timer.SetDuration(67).Begin();
+        timer.SetDuration(time).Begin();
     }
     private void Update()
     {
