@@ -6,6 +6,7 @@ TagManager:
   tags:
   - AIbot
   - Client
+  - Food
   layers:
   - Default
   - TransparentFX
