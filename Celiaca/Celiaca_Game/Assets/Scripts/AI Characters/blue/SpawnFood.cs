@@ -5,60 +5,67 @@ using UnityEngine;
 public class SpawnFood : MonoBehaviour
 {
     public GameObject FoodModel;
-    public float _tiempoDeVida;
-    public bool _termino = false;
+    public float _tiempoDeVida = 0f;
+    public bool _termino = true;
     public string[] comidas;
 
-    private void Start()
+    public bool hasPlate = false;
+    public float fEatingTime = 10;
+    private void Update()
     {
-        FoodModel.SetActive(false);
+        if (_tiempoDeVida > 0f)
+        {
+
+            _tiempoDeVida -= Time.deltaTime;
+            if (_tiempoDeVida <= 0)
+            {
+                Debug.Log("El cliente a finalizado su comida");
+                _tiempoDeVida = 0f;
+                _termino = true;
+                hasPlate = false;
+                Debug.Log("El cliente ha finalizado su comida y el plato ha sido retirado de la mesa");
+                Destroy(this.gameObject);
+            }
+        }
     }
 
     public void GivePlate()
     {
-        if (_termino)
+        if (!hasPlate)
         {
-            if (_tiempoDeVida > 2f)
-            {
-                _tiempoDeVida -= Time.deltaTime;
-                Debug.Log("El cliente ha recibido su comida y demorara 10 segundos");
-            }
-            else
-            {
-                Debug.Log("El cliente a finalizado su comida");
-                _tiempoDeVida = 0;
-                _termino = true;
-                FoodModel.SetActive(false);
-            }
+            hasPlate = true;
+
+            Instantiate(FoodModel, transform.position, transform.rotation);
+            _tiempoDeVida = fEatingTime;
+            Debug.Log("El cliente ha recibido su comida y demorara" + fEatingTime + " segundos");
         }
+
     }
+
 
     private void OnTriggerStay(Collider food)
     {
-        if (food.gameObject.CompareTag ("Player"))
+        Debug.Log("player a entrado al area");
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (_termino == false)
+            if (food.gameObject.CompareTag("Player"))
             {
                 GivePlate();
-                
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        FoodModel.SetActive(true);
-                        Instantiate(FoodModel, transform.position, transform.rotation);
-                        Debug.Log("Se ha entregado la comida");
 
-
-                    }
-
-                if (_termino == true)
+                if (_termino == false)
                 {
-                    Debug.Log("El plato ha sido retirado de la mesa");
+                    Debug.Log("Se ha entregado la comida");
                 }
             }
-            
-            
+           
         }
     }
+
+    /*IEnumerator timeStart()
+    {
+        _tiempoDeVida -= _tiempoDeVida / Time.deltaTime;
+    }*/
 
 
 }

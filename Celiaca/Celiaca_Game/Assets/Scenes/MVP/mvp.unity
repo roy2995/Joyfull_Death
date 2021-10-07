@@ -52707,10 +52707,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70b9b621ad87004b9f66f2caf5be09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoodModel: {fileID: 5444595900663991942, guid: d95e2f80afe4e844b8f660d31e2a75da, type: 3}
-  _tiempoDeVida: 5
+  FoodModel: {fileID: 7402908503730313664, guid: d95e2f80afe4e844b8f660d31e2a75da, type: 3}
+  _tiempoDeVida: 10
   _termino: 0
   comidas: []
+  hasPlate: 0
+  fEatingTime: 10
 --- !u!4 &1504305976
 Transform:
   m_ObjectHideFlags: 0
@@ -52736,8 +52738,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4264433, y: 1, z: 2.3752563}
-  m_Center: {x: 0.21322173, y: 0, z: 0.32470906}
+  m_Size: {x: 1.9619501, y: 1.9441729, z: 2.3752563}
+  m_Center: {x: 0.48097515, y: -0.47208643, z: 0.32470906}
 --- !u!1001 &1506833660
 PrefabInstance:
   m_ObjectHideFlags: 0
