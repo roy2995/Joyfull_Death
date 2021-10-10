@@ -7,15 +7,12 @@ public class SpawnFood : MonoBehaviour
     public GameObject FoodModel;
     public float _tiempoDeVida = 0f;
     public bool _termino = true;
-    public string[] comidas;
-
     public bool hasPlate = false;
     public float fEatingTime = 10;
     private void Update()
     {
         if (_tiempoDeVida > 0f)
         {
-
             _tiempoDeVida -= Time.deltaTime;
             if (_tiempoDeVida <= 0)
             {
@@ -42,13 +39,10 @@ public class SpawnFood : MonoBehaviour
 
     }
 
-
-    private void OnTriggerStay(Collider food)
+    private void OnTriggerEnter(Collider food)
     {
         Debug.Log("player a entrado al area");
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
             if (food.gameObject.CompareTag("Player"))
             {
                 GivePlate();
@@ -57,9 +51,11 @@ public class SpawnFood : MonoBehaviour
                 {
                     Debug.Log("Se ha entregado la comida");
                 }
+                if (_termino == true)
+                {
+                    Debug.Log("");
+                }
             }
-           
-        }
     }
 
     /*IEnumerator timeStart()
