@@ -371,9 +371,10 @@ MonoBehaviour:
   end: {r: 1, g: 0, b: 0.027146816, a: 1}
   setenece_speed: 0
   list: 
-  order_list: []
-  text: {fileID: 0}
-  note: {fileID: 0}
+  order_list:
+  - Mini Pizza de berenjena.
+  text: {fileID: 6690882967928849160, guid: 937ac83424b36fd438697d4327010a77, type: 3}
+  note: {fileID: 3418651579889292471, guid: 0c934e1e9601137429f3d8467cfd679c, type: 3}
 --- !u!1 &4031139137139105050
 GameObject:
   m_ObjectHideFlags: 0
