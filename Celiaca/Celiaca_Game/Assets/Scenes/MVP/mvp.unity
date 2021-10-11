@@ -58169,6 +58169,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foods
       objectReference: {fileID: 0}
+    - target: {fileID: 4009126286091408237, guid: 1424b39e071bacf459768372cb06f23c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4009126286091408239, guid: 1424b39e071bacf459768372cb06f23c, type: 3}
       propertyPath: playerRef
       value: 
