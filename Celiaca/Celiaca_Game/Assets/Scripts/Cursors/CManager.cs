@@ -25,7 +25,7 @@ public class CManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Cursor.visible = C_active;
+        Cursor.visible = true;
         Cursor.SetCursor(Cursors[(int)StateCursor], Vector2.zero, CursorMode.Auto);
     }
 

@@ -10,11 +10,15 @@ public class FoodSpawner : MonoBehaviour
     public GameObject request_UI;
     public GameObject op_UI;
     public GameObject[] Spawn_points;
+    public GameObject[] Food;
+    public static bool[] bar_ocuped;
     [Header("Request Food Settings")]
-    private bool open = false;
+    public static bool open = false;
+    public GameObject Notification;
 
     private void Start()
     {
+        bar_ocuped = new bool[Spawn_points.Length];
         request_UI.SetActive(false);
         op_UI.SetActive(false);
     }
@@ -27,6 +31,10 @@ public class FoodSpawner : MonoBehaviour
             CManager.C_active = true;
             request_UI.SetActive(true);
         }
+        if (!open)
+        {
+            request_UI.SetActive(false);
+        }
     }
 
     // para que abra el ui
@@ -36,5 +44,41 @@ public class FoodSpawner : MonoBehaviour
         {
             open = true;
         }
+    }
+
+    public void MiniPizza()
+    {
+        if(bar_ocuped[0] == false)
+        {
+            Instantiate(Food[0], Spawn_points[0].transform.position, Quaternion.identity);
+            bar_ocuped[0] = true;
+
+        }
+
+        if(bar_ocuped[0]== true)
+        {
+            Notification.SetActive(true);
+        }
+        
+    }
+
+    public void ensalada()
+    {
+        if (bar_ocuped[1] == false)
+        {
+            Instantiate(Food[1], Spawn_points[1].transform.position, Quaternion.identity);
+            bar_ocuped[1] = true;
+        }
+        
+    }
+
+    public void macarrones()
+    {
+        Instantiate(Food[2], Spawn_points[2].transform.position, Quaternion.identity);
+    }
+
+    public void hambuergesa()
+    {
+        Instantiate(Food[3], Spawn_points[3].transform.position, Quaternion.identity);
     }
 }
