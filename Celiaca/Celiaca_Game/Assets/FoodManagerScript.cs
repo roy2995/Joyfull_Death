@@ -12,7 +12,7 @@ public class FoodManagerScript : MonoBehaviour
 
     void Start()
     {
-        foods = GameObject.FindGameObjectsWithTag("Food");
+        //foods = GameObject.FindGameObjectsWithTag("Food");
         foreach (GameObject _foodRef in foods)
         {
             _foodRef.SetActive(false);

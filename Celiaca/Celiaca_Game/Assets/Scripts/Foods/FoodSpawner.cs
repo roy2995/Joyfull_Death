@@ -29,7 +29,7 @@ public class FoodSpawner : MonoBehaviour
         if (open)
         {
             CManager.C_active = true;
-            request_UI.SetActive(true);
+            //request_UI.SetActive(true);
         }
         if (!open)
         {
