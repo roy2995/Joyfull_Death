@@ -11,22 +11,30 @@ public class npc_controller : MonoBehaviour
     public Image img_states;
     public static bool attended;
     public float timer;
+
     [SerializeField] Color current;
     [SerializeField] Color start;
     [SerializeField] Color end;
 
     [Header("Order Manager")]
-    public int setenece_speed;
-    public string list;
+    public float setenece_speed;
+    public string Client; //se supone que agarra el nombre de la persona, en este caso el Cliente.
     [TextArea(3, 10)]
     public string[] order_list;
+
     Queue<string> orders;
     public Text text;
     string sentence;
     public GameObject note;
+
     AudioSource write_sound;
     AudioClip speak_sound;
 
+    private void Start()
+    {
+        orders = new Queue<string>();
+        write_sound = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         waitingService();
@@ -40,6 +48,8 @@ public class npc_controller : MonoBehaviour
         {
             orders.Enqueue(pedidos);
         }
+
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -55,11 +65,11 @@ public class npc_controller : MonoBehaviour
         StartCoroutine(TypeOrder(sentence));
     }
 
-    IEnumerator TypeOrder(string sentence)
+    IEnumerator TypeOrder(string sentences)
     {
         note.SetActive(true);
         text.text = " ";
-        foreach(char letra in sentence.ToCharArray())
+        foreach(char letra in sentences.ToCharArray())
         {
             text.text += letra;
             write_sound.PlayOneShot(speak_sound);
@@ -100,6 +110,16 @@ public class npc_controller : MonoBehaviour
                 current = Color.Lerp(start, end, timer / duration);
                 img_states.color = current;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            note.SetActive(true);
+            StartWriting();
+            Debug.Log("Player is close to the client");
         }
     }
 }

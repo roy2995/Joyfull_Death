@@ -362,19 +362,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19040edfa4924f743b0ea1eb6086c008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 20
-  num_shair: 0
+  duration: 15
+  num_shair: 14
   img_states: {fileID: 599881261500768784}
   timer: 0
   current: {r: 1, g: 1, b: 1, a: 1}
   start: {r: 0.030887008, g: 1, b: 0, a: 1}
   end: {r: 1, g: 0, b: 0.027146816, a: 1}
-  setenece_speed: 0
-  list: 
+  setenece_speed: 0.1
+  Client: Client
   order_list:
-  - Mini Pizza de berenjena.
-  text: {fileID: 6690882967928849160, guid: 937ac83424b36fd438697d4327010a77, type: 3}
-  note: {fileID: 3418651579889292471, guid: 0c934e1e9601137429f3d8467cfd679c, type: 3}
+  - Funciona?
+  text: {fileID: 8531272755819847303, guid: 48a0538882e4ce3448c1ccb4b41ce690, type: 3}
+  note: {fileID: 4817831342521152871, guid: 51ff7f0c0d6f39c43930479ba711d0f3, type: 3}
 --- !u!1 &4031139137139105050
 GameObject:
   m_ObjectHideFlags: 0
