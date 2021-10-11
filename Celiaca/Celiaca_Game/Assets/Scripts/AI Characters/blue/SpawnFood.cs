@@ -57,11 +57,4 @@ public class SpawnFood : MonoBehaviour
                 }
             }
     }
-
-    /*IEnumerator timeStart()
-    {
-        _tiempoDeVida -= _tiempoDeVida / Time.deltaTime;
-    }*/
-
-
 }

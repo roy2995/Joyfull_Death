@@ -32,7 +32,7 @@ public class FoodManagerScript : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider DeactivatePlate)
+    /*private void OnTriggerExit(Collider DeactivatePlate)
     {
         if (DeactivatePlate.gameObject.CompareTag("Player"))
         {
@@ -43,5 +43,5 @@ public class FoodManagerScript : MonoBehaviour
                 Debug.Log("Player has left the table");
             }
         }
-    }
+    }*/
 }
