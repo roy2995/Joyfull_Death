@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     public float Speed = 100f;
     public float turnSmoothTime = .1f;
     private float turnsmoothvelocity;
+    public static int invert = -1;
 
     [Header("timer")]
     [SerializeField] private timer timer;
@@ -27,7 +28,7 @@ public class Player_Movement : MonoBehaviour
     {
         float Horizontal = Input.GetAxisRaw("Horizontal");
         float Vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(Vertical * -1, 0f, Horizontal).normalized;
+        Vector3 direction = new Vector3(Vertical * invert , 0f, Horizontal).normalized;
         if (direction.magnitude >= .1f)
         {
             float tragetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
