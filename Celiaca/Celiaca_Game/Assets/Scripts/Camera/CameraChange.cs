@@ -8,18 +8,15 @@ public class CameraChange : MonoBehaviour
     public Camera Cam_Game;
     public Camera Cam_Request;
 
-    private void Awake()
-    {
-        Cam_Game = GetComponent<Camera>();
-        Cam_Request = GetComponent<Camera>();
-    }
+
 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Player_Movement.invert = 1;
+            Debug.Log("detecto al player");
+            //Player_Movement.invert_H = -1;
             Cam_Game.depth = 1;
             Cam_Request.depth = 2;
         }
@@ -29,7 +26,7 @@ public class CameraChange : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Player_Movement.invert = -1;
+            //Player_Movement.invert_H = 1;
             Cam_Request.depth = 1;
             Cam_Game.depth = 2;
         }
