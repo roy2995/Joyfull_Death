@@ -174,10 +174,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRef: {fileID: 0}
   foods:
-  - {fileID: 4987994070354536558}
-  - {fileID: 4009126286457116875}
-  - {fileID: 4009126286211494969}
-  - {fileID: 4009126286427733595}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _playerIsClose: 0
 --- !u!135 &4009126286091408238
 SphereCollider:
