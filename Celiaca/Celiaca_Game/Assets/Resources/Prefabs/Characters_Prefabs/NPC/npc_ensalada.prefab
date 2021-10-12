@@ -281,7 +281,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 2347ed424a64a214cb62cbb893524afd, type: 3}
+  - {fileID: 2100000, guid: 0aa6f2b36c450b74cb6b52af44d70ac8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -315,8 +315,8 @@ GameObject:
   - component: {fileID: 1111291557727299576}
   - component: {fileID: 1111291557727299579}
   m_Layer: 0
-  m_Name: npc_gluten
-  m_TagString: Untagged
+  m_Name: npc_ensalada
+  m_TagString: Ensalada
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19040edfa4924f743b0ea1eb6086c008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 15
+  duration: 50
   num_shair: 14
   img_states: {fileID: 599881261500768784}
   timer: 0
@@ -434,7 +434,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 2347ed424a64a214cb62cbb893524afd, type: 3}
+  - {fileID: 2100000, guid: 0aa6f2b36c450b74cb6b52af44d70ac8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -515,7 +515,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 2347ed424a64a214cb62cbb893524afd, type: 3}
+  - {fileID: 2100000, guid: 0aa6f2b36c450b74cb6b52af44d70ac8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -596,7 +596,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 2347ed424a64a214cb62cbb893524afd, type: 3}
+  - {fileID: 2100000, guid: 0aa6f2b36c450b74cb6b52af44d70ac8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

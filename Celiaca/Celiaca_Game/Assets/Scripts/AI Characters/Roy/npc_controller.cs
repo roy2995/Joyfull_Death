@@ -107,19 +107,16 @@ public class npc_controller : MonoBehaviour
             if (timer <= duration && attended)
             {
                 timer += Time.deltaTime;
-                current = Color.Lerp(start, end, timer / duration);
-                img_states.color = current;
+                
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Ensalada"))
         {
-            note.SetActive(true);
-            StartWriting();
-            Debug.Log("Player is close to the client");
+            
         }
     }
 }

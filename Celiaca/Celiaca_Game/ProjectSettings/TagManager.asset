@@ -7,11 +7,11 @@ TagManager:
   - AIbot
   - Client
   - Food
-  - Plato 1
-  - Plato 2
-  - Plato 3
-  - Plato 4
   - PlayerInteraction
+  - Ensalada
+  - Pizza
+  - macarrones
+  - Hamburgesa
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ public class FoodManagerScript : MonoBehaviour
         //foods = GameObject.FindGameObjectsWithTag("Food");
         foreach (GameObject _foodRef in foods)
         {
-            _foodRef.SetActive(false);
+            _foodRef.SetActive(true);
         }
     }
 

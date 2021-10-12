@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2325149257984484929
+--- !u!1 &599319633069403802
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7895931512378475993}
-  - component: {fileID: 4816274438309257632}
-  - component: {fileID: 1047396141459442232}
+  - component: {fileID: 1093254262486143604}
+  - component: {fileID: 7556084778607817910}
+  - component: {fileID: 2005357620305101702}
   m_Layer: 0
-  m_Name: Comida
+  m_Name: Plato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7895931512378475993
+--- !u!4 &1093254262486143604
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2325149257984484929}
+  m_GameObject: {fileID: 599319633069403802}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.023, z: 0}
-  m_LocalScale: {x: 65.77057, y: 65.77057, z: 65.77057}
+  m_LocalPosition: {x: -0, y: 0.12071676, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 5493916330589987361}
-  m_RootOrder: 0
+  m_Father: {fileID: 8521669524705748347}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4816274438309257632
+--- !u!33 &7556084778607817910
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2325149257984484929}
-  m_Mesh: {fileID: 1729521814634604473, guid: 2264416908dcacc48b3cc38bbb694688, type: 3}
---- !u!23 &1047396141459442232
+  m_GameObject: {fileID: 599319633069403802}
+  m_Mesh: {fileID: 7900783224094163436, guid: 2264416908dcacc48b3cc38bbb694688, type: 3}
+--- !u!23 &2005357620305101702
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2325149257984484929}
+  m_GameObject: {fileID: 599319633069403802}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: abcfc46204b171b41ab571f6d6359e7e, type: 2}
+  - {fileID: 2100000, guid: 56008179ff5a81a438801036b1f5ec52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,7 +81,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &3611767763974530633
+--- !u!1 &604275261851803923
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,59 +89,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5493916330589987361}
-  - component: {fileID: -3652453262942851716}
-  - component: {fileID: 2535965908389977008}
+  - component: {fileID: 8521669524705748347}
+  - component: {fileID: 8589107315804744230}
+  - component: {fileID: 1823057407644196074}
   m_Layer: 0
   m_Name: Macarrones
-  m_TagString: Food
+  m_TagString: macarrones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5493916330589987361
+  m_IsActive: 1
+--- !u!4 &8521669524705748347
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611767763974530633}
+  m_GameObject: {fileID: 604275261851803923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.58, y: 0.8, z: -4.552}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
-  - {fileID: 7895931512378475993}
-  - {fileID: 3841929431949514030}
+  - {fileID: 6336205562118849155}
+  - {fileID: 1093254262486143604}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-3652453262942851716
+--- !u!114 &8589107315804744230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611767763974530633}
+  m_GameObject: {fileID: 604275261851803923}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 869b0159f0b2c0046b57702feab25ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isPickable: 1
---- !u!65 &2535965908389977008
+--- !u!65 &1823057407644196074
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611767763974530633}
+  m_GameObject: {fileID: 604275261851803923}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &3615392715247184320
+--- !u!1 &1889775084554330395
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,45 +149,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3841929431949514030}
-  - component: {fileID: 5954279401812440044}
-  - component: {fileID: 2425527746353136860}
+  - component: {fileID: 6336205562118849155}
+  - component: {fileID: 8695213476280575738}
+  - component: {fileID: 3815775659534126434}
   m_Layer: 0
-  m_Name: Plato
+  m_Name: Comida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3841929431949514030
+--- !u!4 &6336205562118849155
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3615392715247184320}
+  m_GameObject: {fileID: 1889775084554330395}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.12071676, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: -0, y: 0.023, z: 0}
+  m_LocalScale: {x: 65.77057, y: 65.77057, z: 65.77057}
   m_Children: []
-  m_Father: {fileID: 5493916330589987361}
-  m_RootOrder: 1
+  m_Father: {fileID: 8521669524705748347}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5954279401812440044
+--- !u!33 &8695213476280575738
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3615392715247184320}
-  m_Mesh: {fileID: 7900783224094163436, guid: 2264416908dcacc48b3cc38bbb694688, type: 3}
---- !u!23 &2425527746353136860
+  m_GameObject: {fileID: 1889775084554330395}
+  m_Mesh: {fileID: 1729521814634604473, guid: 2264416908dcacc48b3cc38bbb694688, type: 3}
+--- !u!23 &3815775659534126434
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3615392715247184320}
+  m_GameObject: {fileID: 1889775084554330395}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -200,7 +200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56008179ff5a81a438801036b1f5ec52, type: 2}
+  - {fileID: 2100000, guid: abcfc46204b171b41ab571f6d6359e7e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

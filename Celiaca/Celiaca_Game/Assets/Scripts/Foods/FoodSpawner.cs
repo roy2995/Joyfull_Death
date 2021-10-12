@@ -29,7 +29,7 @@ public class FoodSpawner : MonoBehaviour
         if (open)
         {
             CManager.C_active = true;
-            //request_UI.SetActive(true);
+            request_UI.SetActive(true);
         }
         if (!open)
         {
@@ -80,5 +80,10 @@ public class FoodSpawner : MonoBehaviour
     public void hambuergesa()
     {
         Instantiate(Food[3], Spawn_points[3].transform.position, Quaternion.identity);
+    }
+
+    public void close()
+    {
+        open = false;
     }
 }
