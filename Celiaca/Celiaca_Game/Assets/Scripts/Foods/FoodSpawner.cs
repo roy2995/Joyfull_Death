@@ -8,19 +8,19 @@ public class FoodSpawner : MonoBehaviour
 {
     [Header("References")]
     public GameObject request_UI;
-    public GameObject op_UI;
+   // public GameObject op_UI;
     public GameObject[] Spawn_points;
     public GameObject[] Food;
     public static bool[] bar_ocuped;
     [Header("Request Food Settings")]
     public static bool open = false;
-    public GameObject Notification;
+   // public GameObject Notification;
 
     private void Start()
     {
         bar_ocuped = new bool[Spawn_points.Length];
         request_UI.SetActive(false);
-        op_UI.SetActive(false);
+        //op_UI.SetActive(false);
     }
 
     private void Update()
@@ -57,7 +57,7 @@ public class FoodSpawner : MonoBehaviour
 
         if(bar_ocuped[0]== true)
         {
-            Notification.SetActive(true);
+            //Notification.SetActive(true);
         }
         
     }

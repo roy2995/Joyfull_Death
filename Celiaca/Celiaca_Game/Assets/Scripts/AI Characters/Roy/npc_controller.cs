@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class npc_controller : MonoBehaviour
 {
     [Header("time to client")]
+    public GameObject canvas;
     public float duration;
     public int num_shair;//esto es paracuando deje el aciento lo cambia a falso
     public Image img_states;
-    public static bool attended;
+    public static bool attended = false;
     public float timer;
+    private bool destoy;
 
     [SerializeField] Color current;
     [SerializeField] Color start;
@@ -38,6 +40,7 @@ public class npc_controller : MonoBehaviour
     private void Update()
     {
         waitingService();
+        WaitingToEat();
     }
 
     //funcion de pedidos
@@ -102,12 +105,17 @@ public class npc_controller : MonoBehaviour
     {
         if (attended)
         {
-            timer = 0f;
-            duration += 10;
+            Debug.Log("regista si lo atnedio");
+            canvas.SetActive(false);
             if (timer <= duration && attended)
             {
                 timer += Time.deltaTime;
-                
+            }
+
+            if(timer >= duration)
+            {
+                //puntaje
+                destoy = true;
             }
         }
     }
@@ -116,7 +124,59 @@ public class npc_controller : MonoBehaviour
     {
         if (other.CompareTag("Ensalada"))
         {
-            
+            Debug.Log("detecta la comida");
+            attended = true;
+        }
+
+        if (other.CompareTag("Hamburgesa"))
+        {
+            Debug.Log("detecta la comida");
+            attended = true;
+        }
+
+        if (other.CompareTag("macarrones"))
+        {
+            Debug.Log("detecta la comida");
+            attended = true;
+        }
+        if (other.CompareTag("Pizza"))
+        {
+            Debug.Log("detecta la comida");
+            attended = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Ensalada"))
+        {
+            if (destoy)
+            {
+                Destroy(other);
+            }
+        }
+
+        if (other.CompareTag("Hamburgesa"))
+        {
+            if (destoy)
+            {
+                Destroy(other);
+            }
+        }
+
+        if (other.CompareTag("macarrones"))
+        {
+            if (destoy)
+            {
+                Destroy(other);
+            }
+        }
+        if (other.CompareTag("Pizza"))
+        {
+            if (destoy)
+            {
+                Destroy(other);
+            }
         }
     }
 }
