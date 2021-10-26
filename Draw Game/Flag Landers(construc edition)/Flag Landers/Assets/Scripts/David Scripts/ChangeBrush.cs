@@ -12,16 +12,20 @@ public class ChangeBrush : MonoBehaviour
     public bool _activeBrush2;
     public bool _activeBrush3;
 
-    private void Start()
+    void Start()
     {
         brush1.SetActive(true);
         brush2.SetActive(false);
         brush3.SetActive(false);
+
+        _activeBrush1 = true;
+        _activeBrush2 = false;
+        _activeBrush3 = false;
     }
 
-    private void Update()
+    void Update()
     {
-        if ((brush1 == false || brush2 == false) && (Input.GetKey(KeyCode.Alpha1)))
+        if ((_activeBrush1 == false || _activeBrush2 == false) && (Input.GetKey(KeyCode.Alpha1)))
         {
             brush1.SetActive(true); 
             brush2.SetActive(false); 
@@ -31,9 +35,11 @@ public class ChangeBrush : MonoBehaviour
             _activeBrush2 = false;
             _activeBrush3 = false;
 
+            Debug.Log("se ha cambiado de a: " + brush1);
+
         }
 
-        if ((brush3 == false || brush2 == false) && (Input.GetKey(KeyCode.Alpha2)))
+        if ((_activeBrush3 == false || _activeBrush2 == false) && (Input.GetKey(KeyCode.Alpha2)))
         {
             brush1.SetActive(false);
             brush2.SetActive(true);
@@ -43,9 +49,10 @@ public class ChangeBrush : MonoBehaviour
             _activeBrush2 = true;
             _activeBrush3 = false;
 
+            Debug.Log("se ha cambiado de a: " + brush2);
         }
 
-        if ((brush1 == false || brush3 == false) && (Input.GetKey(KeyCode.Alpha3)))
+        if ((_activeBrush1 == false || _activeBrush3 == false) && (Input.GetKey(KeyCode.Alpha3)))
         {
             brush1.SetActive(false);
             brush2.SetActive(false);
@@ -54,6 +61,8 @@ public class ChangeBrush : MonoBehaviour
             _activeBrush1 = false;
             _activeBrush2 = false;
             _activeBrush3 = true;
+
+            Debug.Log("se ha cambiado de a: " + brush3);
 
         }
     }

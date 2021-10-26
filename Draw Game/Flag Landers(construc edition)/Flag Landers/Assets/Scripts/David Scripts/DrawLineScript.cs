@@ -43,20 +43,13 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
         Destroy(LastInstantiate_Collider.gameObject);
         Start();
         CurrentIndex = 0;
-
-        /*foreach(Rigidbody SphereRB in rb)
-        {
-            SphereRB.useGravity = true;
-        }*/
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         LineGo = new GameObject();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (startDrawing)
