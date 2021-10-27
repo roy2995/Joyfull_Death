@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 614482258}
   - component: {fileID: 614482257}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,12 +436,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614482255}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.9}
-  m_LocalScale: {x: 16.922, y: 19.458, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9000001}
+  m_LocalScale: {x: 18.976332, y: 21.94084, z: 1}
   m_Children: []
-  m_Father: {fileID: 1140340566}
-  m_RootOrder: 0
+  m_Father: {fileID: 1779781759}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &614482257
 BoxCollider:
@@ -889,10 +889,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140340562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 614482256}
+  m_LocalPosition: {x: -0.00000011921, y: 0, z: 0}
+  m_LocalScale: {x: 1.7033, y: 1, z: 1}
+  m_Children: []
   m_Father: {fileID: 1779781759}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1052,6 +1051,7 @@ GameObject:
   - component: {fileID: 1316354351}
   - component: {fileID: 1316354350}
   - component: {fileID: 1316354349}
+  - component: {fileID: 1316354353}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1139,6 +1139,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1316354353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316354348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e39d7e4b662ca2c41a24261815f4cadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 1652888857}
+  LineMat: {fileID: 2100000, guid: 67a6f750d75b81c45b799ca569d581db, type: 2}
+  cam: {fileID: 687604539}
+  Collider_Prefab: {fileID: 7336989649878915560, guid: 631aa543a358f7c438566bdf57de397a, type: 3}
 --- !u!1 &1428941330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1232,6 @@ GameObject:
   - component: {fileID: 1652888858}
   - component: {fileID: 1652888861}
   - component: {fileID: 1652888860}
-  - component: {fileID: 1652888859}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1243,21 +1258,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1652888859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652888857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e39d7e4b662ca2c41a24261815f4cadf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LineMat: {fileID: 2100000, guid: 67a6f750d75b81c45b799ca569d581db, type: 2}
-  cam: {fileID: 687604539}
-  Collider_Prefab: {fileID: 7336989649878915560, guid: 631aa543a358f7c438566bdf57de397a, type: 3}
 --- !u!114 &1652888860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,7 +1306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779781759}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1324,6 +1324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1140340566}
+  - {fileID: 614482256}
   m_Father: {fileID: 1068875602}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -1,24 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using UnityEngine.EventSystems;
     
 public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHandler
 {
+    public GameObject Panel;
+
+    bool _setPanel = false;
 
     GameObject LineGo;
     bool startDrawing;
     Vector3 MousePos;
+    Vector3 mOffset;
+
     LineRenderer _LR;
 
     [SerializeField]
     Material LineMat;
 
     int CurrentIndex;
+    float mZCoord;
 
     [SerializeField]
-    Camera cam;
+    Camera cam; 
 
     [SerializeField]
     Transform Collider_Prefab;
@@ -48,6 +55,17 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
     void Start()
     {
         LineGo = new GameObject();
+        Panel.SetActive(true);
+    }
+
+    void update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Panel.SetActive(false);
+            _setPanel = false;
+            Debug.Log("Player pressed P");
+        }
     }
 
     void FixedUpdate()
@@ -72,7 +90,8 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
                         LastInstantiate_Collider.eulerAngles = new Vector3(LastInstantiate_Collider.rotation.eulerAngles.x, 90, LastInstantiate_Collider.rotation.eulerAngles.z);
                     }
 
-                    LastInstantiate_Collider.localScale = new Vector3(LastInstantiate_Collider.localScale.x, LastInstantiate_Collider.localScale.y, Vector3.Distance(LastInstantiate_Collider.position, CurrLinePos) * 60f);
+                    LastInstantiate_Collider.localScale = new Vector3(LastInstantiate_Collider.localScale.x, LastInstantiate_Collider.localScale.y, 
+                        Vector3.Distance(LastInstantiate_Collider.position, CurrLinePos) * 50f);
                 }
 
                 LastInstantiate_Collider = Instantiate(Collider_Prefab, _LR.GetPosition(CurrentIndex), Quaternion.identity, LineGo.transform);
