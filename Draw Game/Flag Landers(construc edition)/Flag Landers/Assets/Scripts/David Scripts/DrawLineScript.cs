@@ -30,6 +30,8 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
     [SerializeField]
     Transform Collider_Prefab;
     Transform LastInstantiate_Collider;
+    public float Z_changer;
+    
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -55,6 +57,7 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
     void Start()
     {
         LineGo = new GameObject();
+        LineGo.layer = 9;
         Panel.SetActive(true);
     }
 
@@ -70,8 +73,9 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
 
     void FixedUpdate()
     {
-        if (startDrawing)
+        if (startDrawing && DrawModeOff.CanDraw)
         {
+            Debug.Log("Dibuja");
             Vector3 Dist = MousePos - Input.mousePosition;
             float Distance_SqrMag = Dist.sqrMagnitude;
 
@@ -91,11 +95,10 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
                     }
 
                     LastInstantiate_Collider.localScale = new Vector3(LastInstantiate_Collider.localScale.x, LastInstantiate_Collider.localScale.y, 
-                        Vector3.Distance(LastInstantiate_Collider.position, CurrLinePos) * 50f);
+                        Vector3.Distance(LastInstantiate_Collider.position, CurrLinePos) * Z_changer);
                 }
 
                 LastInstantiate_Collider = Instantiate(Collider_Prefab, _LR.GetPosition(CurrentIndex), Quaternion.identity, LineGo.transform);
-
                 LastInstantiate_Collider.gameObject.SetActive(false);
 
                 MousePos = Input.mousePosition;
