@@ -960,10 +960,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790608298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e39d7e4b662ca2c41a24261815f4cadf, type: 3}
+  m_Script: {fileID: 11500000, guid: e90720dc56737fc49a0c77e440514a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1790608298}
+  KinematicFlag: {fileID: 2706066597791654850, guid: 631aa543a358f7c438566bdf57de397a, type: 3}
   LineMat: {fileID: 0}
   cam: {fileID: 155733628}
   Collider_Prefab: {fileID: 7336989649878915560, guid: 631aa543a358f7c438566bdf57de397a, type: 3}
