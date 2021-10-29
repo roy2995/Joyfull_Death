@@ -75,6 +75,7 @@ public class DrawLineScript : MonoBehaviour, IPointerDownHandler,  IPointerUpHan
     {
         if (startDrawing && DrawModeOff.CanDraw)
         {
+            Debug.Log("Dibuja");
             Vector3 Dist = MousePos - Input.mousePosition;
             float Distance_SqrMag = Dist.sqrMagnitude;
 
