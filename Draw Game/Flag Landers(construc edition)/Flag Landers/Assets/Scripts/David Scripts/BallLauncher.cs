@@ -21,18 +21,17 @@ public class BallLauncher : MonoBehaviour
         _spaceIsPressed = false;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 LastRedgeSetPos = lastRedgeSet.transform.position;
-        Vector3 addHeight = new Vector3(0, 5, 0);
         //////////////////////////////////////////////////////////
-        while(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space))
         {
+            Invoke("BodyLaunch", 10f);
             BodyLaunch();
-            return;
         }
 
-        /*if (_spaceIsPressed)
+        if(_spaceIsPressed)
         {
             for (int i = 0; i >= 0; i++)
             {
@@ -40,7 +39,7 @@ public class BallLauncher : MonoBehaviour
                 Counter_Attemps++;
                 Debug.Log(Counter_Attemps);
             }
-        }*/
+        }
     }
 
     void BodyLaunch()
