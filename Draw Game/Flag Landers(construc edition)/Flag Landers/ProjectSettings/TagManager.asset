@@ -7,6 +7,7 @@ TagManager:
   - Meta
   - Inicio
   - Pellota
+  - tagert_score
   layers:
   - Default
   - TransparentFX
