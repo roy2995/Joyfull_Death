@@ -7,15 +7,17 @@ public class Score : MonoBehaviour
 {
     [Header("Score Settings")]
     public int end_score;
-    public GameObject score_system;
+    [SerializeField]
+    public GameObject Score_system;
     public List<Collider> ballcount = new List<Collider>();
     public Text score;
     private bool time_of = false;
     private bool end = false;
     private float current_time = 10;
+
     private void Awake()
     {
-        score_system.SetActive(false);
+        Score_system.SetActive(false);
     }
 
     private void Update()
@@ -29,7 +31,7 @@ public class Score : MonoBehaviour
         {
             StopCoroutine(time_off());
             current_time = 0f;
-            score_system.SetActive(true);
+            Score_system.SetActive(true);
             end_score = ballcount.Count * 500;
             score.text = end_score.ToString();
         }
