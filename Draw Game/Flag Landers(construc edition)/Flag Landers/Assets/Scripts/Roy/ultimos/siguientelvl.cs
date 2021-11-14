@@ -9,4 +9,15 @@ public class siguientelvl : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoade);
     }
+
+    public void QuitScene()
+    {
+        Application.Quit();
+        Debug.Log("Player has quit");
+    }
+
+    public void resetCurrentScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
