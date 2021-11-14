@@ -1,0 +1,2245 @@
+fileFormatVersion: 2
+guid: 6319c7f7671eba942bfe74989285480f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1668854145138483590
+    second: Character Model Project 4_0
+  - first:
+      213: -7637307799991430457
+    second: Character Model Project 4_1
+  - first:
+      213: -6724966059926886896
+    second: Character Model Project 4_2
+  - first:
+      213: 3555456776558780647
+    second: Character Model Project 4_3
+  - first:
+      213: 9151194944370607592
+    second: Character Model Project 4_4
+  - first:
+      213: 2817860495955966498
+    second: Character Model Project 4_5
+  - first:
+      213: -6264334933319177200
+    second: Character Model Project 4_6
+  - first:
+      213: -5781705612000458448
+    second: Character Model Project 4_7
+  - first:
+      213: 2869030902642036702
+    second: Character Model Project 4_8
+  - first:
+      213: 3208536832620807127
+    second: Character Model Project 4_9
+  - first:
+      213: 2237272641238939123
+    second: Character Model Project 4_10
+  - first:
+      213: -1651148573889577917
+    second: Character Model Project 4_11
+  - first:
+      213: 5441174025330534144
+    second: Character Model Project 4_12
+  - first:
+      213: 599886004294183589
+    second: Character Model Project 4_13
+  - first:
+      213: -5518866257299524301
+    second: Character Model Project 4_14
+  - first:
+      213: -2795300730455329143
+    second: Character Model Project 4_15
+  - first:
+      213: -2062954597462051398
+    second: Character Model Project 4_16
+  - first:
+      213: 6161561940257949459
+    second: Character Model Project 4_17
+  - first:
+      213: 6082395886281585194
+    second: Character Model Project 4_18
+  - first:
+      213: -1252819086227415216
+    second: Character Model Project 4_19
+  - first:
+      213: -2352261964572724569
+    second: Character Model Project 4_20
+  - first:
+      213: 2809222442247062124
+    second: Character Model Project 4_21
+  - first:
+      213: -5755248238655767757
+    second: Character Model Project 4_22
+  - first:
+      213: -5887527685717092075
+    second: Character Model Project 4_23
+  - first:
+      213: -9154991525580893384
+    second: Character Model Project 4_24
+  - first:
+      213: 8278200250131758004
+    second: Character Model Project 4_25
+  - first:
+      213: -3125224916796458177
+    second: Character Model Project 4_26
+  - first:
+      213: 3043209503572395819
+    second: Character Model Project 4_27
+  - first:
+      213: 244304119053620332
+    second: Character Model Project 4_28
+  - first:
+      213: 4325546242937090943
+    second: Character Model Project 4_29
+  - first:
+      213: 8664939793088290875
+    second: Character Model Project 4_30
+  - first:
+      213: -6232696856754520479
+    second: Character Model Project 4_31
+  - first:
+      213: -5445116214458763548
+    second: Character Model Project 4_32
+  - first:
+      213: 4214068777124891056
+    second: Character Model Project 4_33
+  - first:
+      213: 6839562485985380534
+    second: Character Model Project 4_34
+  - first:
+      213: 3031348354350389407
+    second: Character Model Project 4_35
+  - first:
+      213: 2731162913581541983
+    second: Character Model Project 4_36
+  - first:
+      213: -4137071366009439147
+    second: Character Model Project 4_37
+  - first:
+      213: -8267405338530940222
+    second: Character Model Project 4_38
+  - first:
+      213: -5503179244045180600
+    second: Character Model Project 4_39
+  - first:
+      213: 7359604990339903656
+    second: Character Model Project 4_40
+  - first:
+      213: 488454611649520116
+    second: Character Model Project 4_41
+  - first:
+      213: 2826802213504023963
+    second: Character Model Project 4_42
+  - first:
+      213: -5935918421728816658
+    second: Character Model Project 4_43
+  - first:
+      213: 477466552763033159
+    second: Character Model Project 4_44
+  - first:
+      213: 2119838335167179251
+    second: Character Model Project 4_45
+  - first:
+      213: 7239695269995201898
+    second: Character Model Project 4_46
+  - first:
+      213: 4363720279234735989
+    second: Character Model Project 4_47
+  - first:
+      213: 4725154433348808569
+    second: Character Model Project 4_48
+  - first:
+      213: 5497049125281225416
+    second: Character Model Project 4_49
+  - first:
+      213: 6252876492297619770
+    second: Character Model Project 4_50
+  - first:
+      213: 6851473980096885350
+    second: Character Model Project 4_51
+  - first:
+      213: 8211616814949768822
+    second: Character Model Project 4_52
+  - first:
+      213: 4692488873101703235
+    second: Character Model Project 4_53
+  - first:
+      213: 1229906545587976864
+    second: Character Model Project 4_54
+  - first:
+      213: -8092058121912716828
+    second: Character Model Project 4_55
+  - first:
+      213: 5247618441237336285
+    second: Character Model Project 4_56
+  - first:
+      213: 3967542738830394222
+    second: Character Model Project 4_57
+  - first:
+      213: -3829808090900841782
+    second: Character Model Project 4_58
+  - first:
+      213: 358946543164318712
+    second: Character Model Project 4_59
+  - first:
+      213: -8783958224289293192
+    second: Character Model Project 4_60
+  - first:
+      213: 6459458009206414240
+    second: Character Model Project 4_61
+  - first:
+      213: 4084894595349739133
+    second: Character Model Project 4_62
+  - first:
+      213: -7560277109854374449
+    second: Character Model Project 4_63
+  - first:
+      213: 2256162062981683118
+    second: Character Model Project 4_64
+  - first:
+      213: 3613135450692438287
+    second: Character Model Project 4_65
+  - first:
+      213: 6373097612288411483
+    second: Character Model Project 4_66
+  - first:
+      213: -1503408103565106409
+    second: Character Model Project 4_67
+  - first:
+      213: 5112798668432878373
+    second: Character Model Project 4_68
+  - first:
+      213: 6062315963010810066
+    second: Character Model Project 4_69
+  - first:
+      213: 6150508550644505868
+    second: Character Model Project 4_70
+  - first:
+      213: 2179067658792933201
+    second: Character Model Project 4_71
+  - first:
+      213: -1882194531868237003
+    second: Character Model Project 4_72
+  - first:
+      213: 4901161525412258251
+    second: Character Model Project 4_73
+  - first:
+      213: -6301781838120687092
+    second: Character Model Project 4_74
+  - first:
+      213: -682016592786487582
+    second: Character Model Project 4_75
+  - first:
+      213: -532175786375878461
+    second: Character Model Project 4_76
+  - first:
+      213: -2505459730018625797
+    second: Character Model Project 4_77
+  - first:
+      213: 5239492500185605934
+    second: Character Model Project 4_78
+  - first:
+      213: -1869209790825447791
+    second: Character Model Project 4_79
+  - first:
+      213: 2241437923608067884
+    second: Character Model Project 4_80
+  - first:
+      213: -4415614106660014748
+    second: Character Model Project 4_81
+  - first:
+      213: -7771563748437882800
+    second: Character Model Project 4_82
+  - first:
+      213: -5748172383699902572
+    second: Character Model Project 4_83
+  - first:
+      213: -5440451159727531792
+    second: Character Model Project 4_84
+  - first:
+      213: 8327867889464911034
+    second: Character Model Project 4_85
+  - first:
+      213: 3686320313832988118
+    second: Character Model Project 4_86
+  - first:
+      213: 7052356174281401511
+    second: Character Model Project 4_87
+  - first:
+      213: 8356598377770679184
+    second: Character Model Project 4_88
+  - first:
+      213: 2566043646706077207
+    second: Character Model Project 4_89
+  - first:
+      213: -8997721107630810087
+    second: Character Model Project 4_90
+  - first:
+      213: -5635185336957265452
+    second: Character Model Project 4_91
+  - first:
+      213: -1826590829974678197
+    second: Character Model Project 4_92
+  - first:
+      213: -3080712630490277808
+    second: Character Model Project 4_93
+  - first:
+      213: -453418590778493697
+    second: Character Model Project 4_94
+  - first:
+      213: 8583063337041580450
+    second: Character Model Project 4_95
+  - first:
+      213: -2205043115420393887
+    second: Character Model Project 4_96
+  - first:
+      213: -1591238947298250971
+    second: Character Model Project 4_97
+  - first:
+      213: -6346138501255695308
+    second: Character Model Project 4_98
+  - first:
+      213: -4983796728260116271
+    second: Character Model Project 4_99
+  - first:
+      213: -3019527834109336853
+    second: Character Model Project 4_100
+  - first:
+      213: -2947529533861230298
+    second: Character Model Project 4_101
+  - first:
+      213: 6124484421011314029
+    second: Character Model Project 4_102
+  - first:
+      213: 5609434692577156381
+    second: Character Model Project 4_103
+  - first:
+      213: -6334864325409435146
+    second: Character Model Project 4_104
+  - first:
+      213: 7277555397905574565
+    second: Character Model Project 4_105
+  - first:
+      213: 7982918638017680166
+    second: Character Model Project 4_106
+  - first:
+      213: -6592189780028488922
+    second: Character Model Project 4_107
+  - first:
+      213: -1052076408235341793
+    second: Character Model Project 4_108
+  - first:
+      213: -2838767926615683630
+    second: Character Model Project 4_109
+  - first:
+      213: -4180995659024342048
+    second: Character Model Project 4_110
+  - first:
+      213: -3541772463428319167
+    second: Character Model Project 4_111
+  - first:
+      213: 7343943759497618173
+    second: Character Model Project 4_112
+  - first:
+      213: 9137976649700392597
+    second: Character Model Project 4_113
+  - first:
+      213: -6990616342960897341
+    second: Character Model Project 4_114
+  - first:
+      213: -8798388833096979632
+    second: Character Model Project 4_115
+  - first:
+      213: 5534605850682317750
+    second: Character Model Project 4_116
+  - first:
+      213: 6932949139714707244
+    second: Character Model Project 4_117
+  - first:
+      213: -2056124276143596447
+    second: Character Model Project 4_118
+  - first:
+      213: -1027791239992248809
+    second: Character Model Project 4_119
+  - first:
+      213: -6625402552859942527
+    second: Character Model Project 4_120
+  - first:
+      213: -2824740390018212167
+    second: Character Model Project 4_121
+  - first:
+      213: 6825924433285495443
+    second: Character Model Project 4_122
+  - first:
+      213: 230643400799856660
+    second: Character Model Project 4_123
+  - first:
+      213: 5477057523898675661
+    second: Character Model Project 4_124
+  - first:
+      213: 4737915352957953836
+    second: Character Model Project 4_125
+  - first:
+      213: 5011175681891174633
+    second: Character Model Project 4_126
+  - first:
+      213: -4758868572047992073
+    second: Character Model Project 4_127
+  - first:
+      213: 3170014026797010037
+    second: Character Model Project 4_128
+  - first:
+      213: -1852658471739828380
+    second: Character Model Project 4_129
+  - first:
+      213: -5894451360043140548
+    second: Character Model Project 4_130
+  - first:
+      213: 3107180277963545682
+    second: Character Model Project 4_131
+  - first:
+      213: 1187635458369979043
+    second: Character Model Project 4_132
+  - first:
+      213: -3834753746643686104
+    second: Character Model Project 4_133
+  - first:
+      213: -3242756552402844709
+    second: Character Model Project 4_134
+  - first:
+      213: -7492797994707473143
+    second: Character Model Project 4_135
+  - first:
+      213: 5174034636868782526
+    second: Character Model Project 4_136
+  - first:
+      213: 6921341721621476942
+    second: Character Model Project 4_137
+  - first:
+      213: 1397630249379280429
+    second: Character Model Project 4_138
+  - first:
+      213: -4661668438891916942
+    second: Character Model Project 4_139
+  - first:
+      213: -1406886346814169051
+    second: Character Model Project 4_140
+  - first:
+      213: -601315160750342783
+    second: Character Model Project 4_141
+  - first:
+      213: -712720235046831662
+    second: Character Model Project 4_142
+  - first:
+      213: -7143610003780693570
+    second: Character Model Project 4_143
+  - first:
+      213: -265745180845097596
+    second: Character Model Project 4_144
+  - first:
+      213: 6304809180281690908
+    second: Character Model Project 4_145
+  - first:
+      213: -7526777855474641207
+    second: Character Model Project 4_146
+  - first:
+      213: -3033413939800907850
+    second: Character Model Project 4_147
+  - first:
+      213: -4061896186023926541
+    second: Character Model Project 4_148
+  - first:
+      213: 5657148456439329838
+    second: Character Model Project 4_149
+  - first:
+      213: -6461952093902984154
+    second: Character Model Project 4_150
+  - first:
+      213: 2079560246328883578
+    second: Character Model Project 4_151
+  - first:
+      213: 9006756936754270243
+    second: Character Model Project 4_152
+  - first:
+      213: -1140194444811241697
+    second: Character Model Project 4_153
+  - first:
+      213: -6627624939314894606
+    second: Character Model Project 4_154
+  - first:
+      213: 298078991430175075
+    second: Character Model Project 4_155
+  - first:
+      213: 7731032361965194865
+    second: Character Model Project 4_156
+  - first:
+      213: 6577766167239708166
+    second: Character Model Project 4_157
+  - first:
+      213: -9115928746450766632
+    second: Character Model Project 4_158
+  - first:
+      213: -7544641692004114102
+    second: Character Model Project 4_159
+  - first:
+      213: -60276458072451811
+    second: Character Model Project 4_160
+  - first:
+      213: -782725844698292487
+    second: Character Model Project 4_161
+  - first:
+      213: 5348621359136439887
+    second: Character Model Project 4_162
+  - first:
+      213: 269505140430934548
+    second: Character Model Project 4_163
+  - first:
+      213: 5110608077694408789
+    second: Character Model Project 4_164
+  - first:
+      213: 2963898731363835216
+    second: Character Model Project 4_165
+  - first:
+      213: 2999821305832087150
+    second: Character Model Project 4_166
+  - first:
+      213: -830691676121446908
+    second: Character Model Project 4_167
+  - first:
+      213: 3340778727144117110
+    second: Character Model Project 4_168
+  - first:
+      213: 8640389673667486996
+    second: Character Model Project 4_169
+  - first:
+      213: 5303556786429981009
+    second: Character Model Project 4_170
+  - first:
+      213: 2951424422791953279
+    second: Character Model Project 4_171
+  - first:
+      213: -5175690533432787619
+    second: Character Model Project 4_172
+  - first:
+      213: -7450161273385600296
+    second: Character Model Project 4_173
+  - first:
+      213: 1368484689972200910
+    second: Character Model Project 4_174
+  - first:
+      213: -6070986744863122458
+    second: Character Model Project 4_175
+  - first:
+      213: -3779406355243228759
+    second: Character Model Project 4_176
+  - first:
+      213: 1164636331530355143
+    second: Character Model Project 4_177
+  - first:
+      213: 8447473809047276172
+    second: Character Model Project 4_178
+  - first:
+      213: -2086613307151109764
+    second: Character Model Project 4_179
+  - first:
+      213: -5655643251667421357
+    second: Character Model Project 4_180
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character Model Project 4_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 174
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.63529176, y: 0.50464225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0aa05c915875130800000000000000
+      internalID: 3555456776558780647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.67936426, y: 0.5023211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e58f8911539ffe70800000000000000
+      internalID: 9151194944370607592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 174
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6874361, y: 0.5069634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22abf00013d0b1720800000000000000
+      internalID: 2817860495955966498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6937131, y: 0.49535683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ca079619c9019a0800000000000000
+      internalID: -6264334933319177200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 174
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6973009, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03984d0f06143cfa0800000000000000
+      internalID: -5781705612000458448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.67936426, y: 0.49767888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc899b768d0d720800000000000000
+      internalID: 2869030902642036702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_9
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 174
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5986503, y: 0.49767888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3ce1def33078c20800000000000000
+      internalID: 3208536832620807127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_11
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 174
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0.611417, y: 0.50464225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c3be5ce11f519e0800000000000000
+      internalID: -1651148573889577917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 174
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5821754, y: 0.5158198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaeeaf7429335800800000000000000
+      internalID: 599886004294183589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_15
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 174
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.60565406, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986f1d8bbc81539d0800000000000000
+      internalID: -2795300730455329143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_16
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.68336624, y: 0.49209055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5f38e39b9ee53e0800000000000000
+      internalID: -2062954597462051398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_17
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 174
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.668087, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31744a670f3428550800000000000000
+      internalID: 6161561940257949459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6711426, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a227c1925d2096450800000000000000
+      internalID: 6082395886281585194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_19
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 174
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.668087, y: 0.5158198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fd595cda71d9ee0800000000000000
+      internalID: -1252819086227415216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_20
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 174
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.68336624, y: 0.5158198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2fafeb4361b5fd0800000000000000
+      internalID: -2352261964572724569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_21
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 174
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6248627, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6201356dec5cf620800000000000000
+      internalID: 2809222442247062124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_23
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 174
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0.61864877, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5191e8763cc4b4ea0800000000000000
+      internalID: -5887527685717092075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_27
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 152
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3788008, y: 0.50464135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27868d7be6ab3a20800000000000000
+      internalID: 3043209503572395819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_28
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 152
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.30987376, y: 0.50464135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c641b594d41f36300800000000000000
+      internalID: 244304119053620332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_29
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 152
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.2977667, y: 0.5069634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f737ac5e36d670c30800000000000000
+      internalID: 4325546242937090943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 152
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.2955246, y: 0.5116057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30ac2f35dc004870800000000000000
+      internalID: 8664939793088290875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_31
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 152
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3174963, y: 0.4999991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ef3742b330189a0800000000000000
+      internalID: -6232696856754520479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_32
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 152
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.2883502, y: 0.4999991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6377407af0f64b0800000000000000
+      internalID: -5445116214458763548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_33
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 152
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3731635, y: 0.49767798}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b90897c9316b7a30800000000000000
+      internalID: 4214068777124891056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_34
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 152
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0.39090416, y: 0.5069634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b80f3ce7d10bee50800000000000000
+      internalID: 6839562485985380534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 149
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.39541373, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c3192038b2696c0800000000000000
+      internalID: -4137071366009439147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_39
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 150
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.38474163, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841626772a7c0a3b0800000000000000
+      internalID: -5503179244045180600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_40
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 150
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.32885882, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0f660feb1922660800000000000000
+      internalID: 7359604990339903656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_41
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 150
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3319168, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f16540a1e657c600800000000000000
+      internalID: 488454611649520116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_42
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 150
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.35330755, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9df13ad2a1da3720800000000000000
+      internalID: 2826802213504023963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_43
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 150
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.29829788, y: 0.49209055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1182135a16f9da0800000000000000
+      internalID: -5935918421728816658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_44
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 150
+        width: 11
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3288602, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746229dcc4d40a600800000000000000
+      internalID: 477466552763033159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_45
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 150
+        width: 14
+        height: 17
+      alignment: 9
+      pivot: {x: 0.38474163, y: 0.48418114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f925e40cbd2b6d10800000000000000
+      internalID: 2119838335167179251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_46
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 150
+        width: 17
+        height: 17
+      alignment: 9
+      pivot: {x: 0.36553058, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65c3229d70987460800000000000000
+      internalID: 7239695269995201898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 125
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.57470447, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007a8ec82fee28b40800000000000000
+      internalID: 5441174025330534144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 126
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5597636, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335b5c2116c0963b0800000000000000
+      internalID: -5518866257299524301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 126
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5821754, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bfab438304120b0800000000000000
+      internalID: -5755248238655767757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_35
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 126
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5672336, y: 0.5179291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98158b7443811a20800000000000000
+      internalID: 3031348354350389407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_36
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 126
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5672336, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5aafb7133a07e520800000000000000
+      internalID: 2731162913581541983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_38
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 104
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4103546, y: 0.5158202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caf1bea5a6444d80800000000000000
+      internalID: -8267405338530940222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_47
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 104
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.41782463, y: 0.50000054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f64f6597c0f8c30800000000000000
+      internalID: 4363720279234735989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_168
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 104
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4477073, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6735b985d84dc5e20800000000000000
+      internalID: 3340778727144117110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_169
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 104
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.44023642, y: 0.50000054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41567e321a4d8e770800000000000000
+      internalID: 8640389673667486996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_170
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 104
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.40288374, y: 0.5079103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151754d3cc40a9940800000000000000
+      internalID: 5303556786429981009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_171
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 78
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.55976444, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b3ded00e095f820800000000000000
+      internalID: 2951424422791953279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_172
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 78
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.57470447, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5df26fb1e04c28b0800000000000000
+      internalID: -5175690533432787619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_173
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 78
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5821754, y: 0.49103597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8daba746bc5bb9890800000000000000
+      internalID: -7450161273385600296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_174
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 78
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5672336, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec58a523395ddf210800000000000000
+      internalID: 1368484689972200910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_175
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 78
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5821754, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb145498b58fbba0800000000000000
+      internalID: -6070986744863122458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_176
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 52
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4103546, y: 0.51582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1afdda1f9dc8bc0800000000000000
+      internalID: -3779406355243228759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_177
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 52
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4103546, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c18161b29e992010800000000000000
+      internalID: 1164636331530355143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_178
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 52
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4028846, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acda53ca47b3570800000000000000
+      internalID: 8447473809047276172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_179
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 52
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4103546, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71b7a3a04cda03e0800000000000000
+      internalID: -2086613307151109764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_180
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 52
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4028846, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35737007d6e1381b0800000000000000
+      internalID: -5655643251667421357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 152
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4145025, y: 0.5162479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f53fb61d936c0f10800000000000000
+      internalID: 2237272641238939123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 174
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.56576693, y: 0.51856905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8331a0476bfe2f080800000000000000
+      internalID: -9154991525580893384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.58988094, y: 0.5023211}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681eae6c006f82710800000000000000
+      internalID: 1668854145138483590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 127
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.576728, y: 0.50563705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2d0352505d20690800000000000000
+      internalID: -7637307799991430457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 127
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5854969, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016ef77bffe1ca2a0800000000000000
+      internalID: -6724966059926886896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 127
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5811123, y: 0.49473774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb37a8844312e270800000000000000
+      internalID: 8278200250131758004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 127
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5811123, y: 0.5069634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3bb52f0f78f0a4d0800000000000000
+      internalID: -3125224916796458177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_55
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 106
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4145029, y: 0.5116057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1f39df20c33bf80800000000000000
+      internalID: -8092058121912716828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_56
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 106
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.40792635, y: 0.50789183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd09db25b2943d840800000000000000
+      internalID: 5247618441237336285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 106
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.42984855, y: 0.50464183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e638a2b991b8f0730800000000000000
+      internalID: 3967542738830394222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_58
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 106
+        width: 18
+        height: 14
+      alignment: 9
+      pivot: {x: 0.41011852, y: 0.49999946}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca30ff15d9c9dac0800000000000000
+      internalID: -3829808090900841782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_59
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 106
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4145025, y: 0.5023207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3e9aeaafb3bf400800000000000000
+      internalID: 358946543164318712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5843162, y: 0.5076518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c9d5fc88c191680800000000000000
+      internalID: -8783958224289293192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 80
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5794979, y: 0.49186897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abdc40f5da94a950800000000000000
+      internalID: 6459458009206414240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_70
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5867255, y: 0.50578153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d1b25a0fefa5550800000000000000
+      internalID: 6150508550644505868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_71
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 80
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5891342, y: 0.51897097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15715ef8d7a9d3e10800000000000000
+      internalID: 2179067658792933201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_72
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 80
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.57708865, y: 0.5076518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533afc9ab0a11e5e0800000000000000
+      internalID: -1882194531868237003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_73
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 54
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.41809165, y: 0.50255024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1620d907c640440800000000000000
+      internalID: 4901161525412258251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 54
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42291006, y: 0.5108404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0aeec67ec29b88a0800000000000000
+      internalID: -6301781838120687092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_75
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 54
+        width: 18
+        height: 15
+      alignment: 9
+      pivot: {x: 0.40845552, y: 0.49710897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e60a08b58df886f0800000000000000
+      internalID: -682016592786487582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_76
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 54
+        width: 18
+        height: 16
+      alignment: 9
+      pivot: {x: 0.42291006, y: 0.48102856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8600f11f45d98f0800000000000000
+      internalID: -532175786375878461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Model Project 4_77
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 54
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.43013737, y: 0.50255024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6913966a1da3dd0800000000000000
+      internalID: -2505459730018625797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
