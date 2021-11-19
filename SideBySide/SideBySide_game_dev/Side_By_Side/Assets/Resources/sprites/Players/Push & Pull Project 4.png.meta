@@ -1,0 +1,478 @@
+fileFormatVersion: 2
+guid: 998b8bb47353b934f822b3be8c194e3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4592001163852719563
+    second: Push & Pull Project 4_0
+  - first:
+      213: 4462372222127747860
+    second: Push & Pull Project 4_1
+  - first:
+      213: 832783057995264040
+    second: Push & Pull Project 4_2
+  - first:
+      213: 5869040842600056421
+    second: Push & Pull Project 4_3
+  - first:
+      213: -7290115183365204363
+    second: Push & Pull Project 4_4
+  - first:
+      213: 757878355094304054
+    second: Push & Pull Project 4_5
+  - first:
+      213: 2331801117912818181
+    second: Push & Pull Project 4_6
+  - first:
+      213: -4917460585936775620
+    second: Push & Pull Project 4_7
+  - first:
+      213: -8629840258235296122
+    second: Push & Pull Project 4_8
+  - first:
+      213: -1502310290843895872
+    second: Push & Pull Project 4_9
+  - first:
+      213: -8469973535217850856
+    second: Push & Pull Project 4_10
+  - first:
+      213: 1782251559639288807
+    second: Push & Pull Project 4_11
+  - first:
+      213: -5420326277215426950
+    second: Push & Pull Project 4_12
+  - first:
+      213: 2101469526669091773
+    second: Push & Pull Project 4_13
+  - first:
+      213: 3104612675237096019
+    second: Push & Pull Project 4_14
+  - first:
+      213: 2054226889548833907
+    second: Push & Pull Project 4_15
+  - first:
+      213: 6002208569939351531
+    second: Push & Pull Project 4_16
+  - first:
+      213: -3260392527854798693
+    second: Push & Pull Project 4_17
+  - first:
+      213: 93956098119853805
+    second: Push & Pull Project 4_18
+  - first:
+      213: 136097401886832603
+    second: Push & Pull Project 4_19
+  - first:
+      213: 1115671286767910064
+    second: Push & Pull Project 4_20
+  - first:
+      213: -7401913664722995674
+    second: Push & Pull Project 4_21
+  - first:
+      213: 3846579458506148502
+    second: Push & Pull Project 4_22
+  - first:
+      213: -6352828331306192506
+    second: Push & Pull Project 4_23
+  - first:
+      213: -7202125805755400983
+    second: Push & Pull Project 4_24
+  - first:
+      213: -1895278855545641479
+    second: Push & Pull Project 4_25
+  - first:
+      213: -391314195255346171
+    second: Push & Pull Project 4_26
+  - first:
+      213: -5084292429484461118
+    second: Push & Pull Project 4_27
+  - first:
+      213: 5930502816824293650
+    second: Push & Pull Project 4_28
+  - first:
+      213: 5874140480696775885
+    second: Push & Pull Project 4_29
+  - first:
+      213: 3836049230183938278
+    second: Push & Pull Project 4_30
+  - first:
+      213: 6200015480243570117
+    second: Push & Pull Project 4_31
+  - first:
+      213: -4276822849883000586
+    second: Push & Pull Project 4_32
+  - first:
+      213: -7048505700329245243
+    second: Push & Pull Project 4_33
+  - first:
+      213: -6154947797712537923
+    second: Push & Pull Project 4_34
+  - first:
+      213: 383284469050809822
+    second: Push & Pull Project 4_35
+  - first:
+      213: 2134273160681575395
+    second: Push & Pull Project 4_36
+  - first:
+      213: 8579597463951669726
+    second: Push & Pull Project 4_37
+  - first:
+      213: 2729941628094535035
+    second: Push & Pull Project 4_38
+  - first:
+      213: -2728264696716147388
+    second: Push & Pull Project 4_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Push & Pull Project 4_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 53
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.59063745, y: 0.5462074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413be73b4e78ded30800000000000000
+      internalID: 4462372222127747860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 53
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.36706543, y: 0.54976183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5668f630d85037150800000000000000
+      internalID: 5869040842600056421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 53
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.37109375, y: 0.542653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6357a5a3956848a00800000000000000
+      internalID: 757878355094304054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 53
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.58392376, y: 0.54976183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686158b0206ac3880800000000000000
+      internalID: -8629840258235296122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 53
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.37512258, y: 0.5462074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816616012fb947a80800000000000000
+      internalID: -8469973535217850856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 53
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.36706543, y: 0.5462074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76ebdf08f127c4b0800000000000000
+      internalID: -5420326277215426950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_27
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 12
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6329348, y: 0.5497617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3fe5e19f6f079b0800000000000000
+      internalID: -5084292429484461118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_29
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6329348, y: 0.5568705}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc47ca805a3258150800000000000000
+      internalID: 5874140480696775885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_37
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 12
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.6329346, y: 0.5248809}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed97ea2df6ad01770800000000000000
+      internalID: 8579597463951669726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 12
+        width: 15
+        height: 17
+      alignment: 9
+      pivot: {x: 0.62487894, y: 0.5355441}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445cefa96b1432ad0800000000000000
+      internalID: -2728264696716147388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 12
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4194336, y: 0.52132654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c361142a6aba1cbb0800000000000000
+      internalID: -4917460585936775620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Push & Pull Project 4_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 12
+        width: 18
+        height: 17
+      alignment: 9
+      pivot: {x: 0.4194336, y: 0.5390985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f5d300c8b62be0800000000000000
+      internalID: -1502310290843895872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
