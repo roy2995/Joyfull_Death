@@ -40,33 +40,12 @@ public class transition : MonoBehaviour
             img_transition.material.SetFloat("_Cutoff", curtain);
             curtain = Mathf.Clamp(radiuscurtain, 0, 1);
             radiuscurtain -= Time.deltaTime;
-            if(radiuscurtain == 0)
+            if(radiuscurtain < -0.01)
             {
                 Full = false;
+                Debug.Log("reset");
                 radiuscurtain = 0;
             }
-        }
-    }
-
-    private void initialize()
-    {
-        if (change)
-        {
-            if(op_world_1 && !op_world_2)
-            {
-                Debug.Log("change");
-                radiuscurtain = 0;
-                img_transition.material.SetFloat("_Cutoff", radiuscurtain);
-            }
-        }
-    }
-
-    private void end()
-    {
-        if (!change)
-        {
-            radiuscurtain = 1;
-            img_transition.material.SetFloat("_Cutoff", radiuscurtain);
         }
     }
 }
