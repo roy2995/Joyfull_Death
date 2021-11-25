@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 411012419}
   - component: {fileID: 411012418}
   - component: {fileID: 411012417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Caja
   m_TagString: Box
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1677429262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1337,7 +1337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1962791497
 Transform:
   m_ObjectHideFlags: 0
