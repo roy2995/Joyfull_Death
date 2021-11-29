@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public Dialogue dialogue;
 
+    public GameObject thisEvent;
     public Text nameText;
     public Text dialogueText;
     public GameObject dialoguePanel;
@@ -103,6 +104,7 @@ public class DialogueManager : MonoBehaviour
             CanSpeak = false;
             Debug.Log("Salio Trigger");
             dialoguePanel.SetActive(false);
+            thisEvent.SetActive(false);
         }
     }
 }

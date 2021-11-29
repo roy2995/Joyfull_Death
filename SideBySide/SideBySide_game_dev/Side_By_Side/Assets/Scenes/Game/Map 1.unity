@@ -360,6 +360,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193294578}
   m_CullTransparentMesh: 0
+--- !u!1 &243494957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243494958}
+  - component: {fileID: 243494960}
+  - component: {fileID: 243494959}
+  m_Layer: 0
+  m_Name: Evento 1 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &243494958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243494957}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.57, y: -15.65, z: -38.341938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484509481}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &243494959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243494957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005a1728807ef5045830f274c90d1448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Otto
+    sentences:
+    - Es posible de que encontremos una manera de salir si cooperamos ambos.
+    - Necesito que sigas mis instrucciones, si quieres salir de aqui tambien.
+    - Estoy seguro de que estamos por buen camino.
+  thisEvent: {fileID: 243494957}
+  nameText: {fileID: 1026161152}
+  dialogueText: {fileID: 294675596}
+  dialoguePanel: {fileID: 193294578}
+  speakSound: {fileID: 0}
+  CanSpeak: 0
+--- !u!61 &243494960
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243494957}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.7305126}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5.900917}
+  m_EdgeRadius: 0
 --- !u!1 &294675595
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +584,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1146450941}
+  - {fileID: 1005406816}
+  - {fileID: 243494958}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -634,7 +718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7735837978942827441, guid: 475173a4a4e894a47bf71857f6f31699, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7735837978942827441, guid: 475173a4a4e894a47bf71857f6f31699, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1040,6 +1124,7 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences: []
+  thisEvent: {fileID: 0}
   nameText: {fileID: 1026161152}
   dialogueText: {fileID: 294675596}
   dialoguePanel: {fileID: 0}
@@ -1059,6 +1144,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1005406815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005406816}
+  - component: {fileID: 1005406818}
+  - component: {fileID: 1005406817}
+  m_Layer: 0
+  m_Name: Evento 1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1005406816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005406815}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.22, y: -15.65, z: -38.341938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484509481}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1005406817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005406815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005a1728807ef5045830f274c90d1448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Otto
+    sentences:
+    - Creo que puedo usar esta caja
+  thisEvent: {fileID: 1005406815}
+  nameText: {fileID: 1026161152}
+  dialogueText: {fileID: 294675596}
+  dialoguePanel: {fileID: 193294578}
+  speakSound: {fileID: 0}
+  CanSpeak: 0
+--- !u!61 &1005406818
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005406815}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.7305126}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5.900917}
+  m_EdgeRadius: 0
 --- !u!1 &1026161149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1508,7 @@ MonoBehaviour:
       la misma placa donde estoy parado posiblemente podamos salir.
     - Si, pero veo dos placas de presion.
     - Intenta con la primera.
+  thisEvent: {fileID: 1146450940}
   nameText: {fileID: 1026161152}
   dialogueText: {fileID: 294675596}
   dialoguePanel: {fileID: 193294578}
@@ -1839,7 +2005,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1787900288}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1682206986 stripped
 MonoBehaviour:
@@ -1996,8 +2162,8 @@ Transform:
   - {fileID: 1148193439}
   - {fileID: 1777804512}
   - {fileID: 1603538067}
-  - {fileID: 1155165264}
   - {fileID: 1657209007}
+  - {fileID: 1155165264}
   - {fileID: 1643747727}
   m_Father: {fileID: 0}
   m_RootOrder: 9
