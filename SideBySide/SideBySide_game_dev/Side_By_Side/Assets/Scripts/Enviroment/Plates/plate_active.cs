@@ -8,13 +8,8 @@ public class plate_active : MonoBehaviour
     public Animator animator;
     public static bool active_door = false;
 
-
-
-
-
-
-
-
+    [Header("Door Active")]
+    public Animator door_open;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,6 +24,7 @@ public class plate_active : MonoBehaviour
         if (collision.CompareTag("Box") || collision.CompareTag("Player"))
         {
             animator.SetBool("Active", true);
+            door_open.SetBool("Active", true);
             active_door = true;
         }
     }
@@ -36,5 +32,6 @@ public class plate_active : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         animator.SetBool("Active", false);
+        door_open.SetBool("Active", false);
     }
 }
