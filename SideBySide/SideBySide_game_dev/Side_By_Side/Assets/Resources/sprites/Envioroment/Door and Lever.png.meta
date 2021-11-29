@@ -7,13 +7,13 @@ TextureImporter:
     second: Door and Lever_0
   - first:
       213: 3826689223696966974
-    second: Door and Lever_1
+    second: brackets_world_1
   - first:
       213: 6235818187505918172
     second: Door and Lever_2
   - first:
       213: 8842279614156479208
-    second: Door and Lever_3
+    second: Door_World_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,6 +97,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -109,7 +133,7 @@ TextureImporter:
         width: 9
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -122,15 +146,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door and Lever_1
+      name: brackets_world_1
       rect:
         serializedVersion: 2
         x: 70
-        y: 110
+        y: 111
         width: 48
-        height: 16
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,7 +175,7 @@ TextureImporter:
         width: 19
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -164,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door and Lever_3
+      name: Door_World_1
       rect:
         serializedVersion: 2
         x: 70
@@ -172,7 +196,7 @@ TextureImporter:
         width: 6
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
