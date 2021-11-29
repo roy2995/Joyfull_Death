@@ -5,17 +5,26 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public Dialogue dialogue;
 
     public Text nameText;
     public Text dialogueText;
+    public GameObject dialoguePanel;
     private Queue<string> sentences;
+
+
+    AudioSource myAudio;
+    public AudioClip speakSound;
+
+    public bool CanSpeak = false;
 
     void Start()
     {
         sentences = new Queue<string>();
+        myAudio = GetComponent<AudioSource>();
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue()
     {
         //Debug.Log("starting conversation with " + dialogue.name);
 
@@ -49,6 +58,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            myAudio.PlayOneShot(speakSound);
             yield return null;
         }
     }
@@ -56,5 +66,43 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         Debug.Log("End of conversation");
+    }
+
+    private void Update()
+    {
+        if (CanSpeak)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                CanSpeak = true;
+                dialoguePanel.SetActive(true);
+                {
+                    Debug.Log("Seguir al siguiente dialogo");
+                    DisplayNextSentences();
+                    
+                }
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D Entry)
+    {
+        if (Entry.CompareTag("Player"))
+        {
+            CanSpeak = true;
+            dialoguePanel.SetActive(true);
+            Debug.Log("Entro Trigger");
+            StartDialogue();
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D Fuchi)
+    {
+        if (Fuchi.CompareTag("Player"))
+        {
+            CanSpeak = false;
+            Debug.Log("Salio Trigger");
+            dialoguePanel.SetActive(false);
+        }
     }
 }

@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &193294579
 RectTransform:
   m_ObjectHideFlags: 0
@@ -400,10 +400,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 34
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 9
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -745,10 +745,9 @@ MonoBehaviour:
   dialogue:
     name: Otto
     sentences:
-    - Okey, al parecer si presiono esta placa ilumina a otro color. Si presionas
-      la misma placa donde estoy parado posiblemente podamos salir.
-    - Si, pero veo dos placas de presion.
-    - Intenta con la primera.
+    - 
+    - 
+    - 
 --- !u!1001 &585715353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,8 +1188,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 005a1728807ef5045830f274c90d1448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
   nameText: {fileID: 1026161152}
   dialogueText: {fileID: 294675596}
+  dialoguePanel: {fileID: 0}
+  speakSound: {fileID: 0}
+  CanSpeak: 0
 --- !u!4 &930868399
 Transform:
   m_ObjectHideFlags: 0
@@ -1504,6 +1509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146450941}
   - component: {fileID: 1146450942}
+  - component: {fileID: 1146450943}
   m_Layer: 0
   m_Name: Evento 1
   m_TagString: Untagged
@@ -1551,6 +1557,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.900917}
   m_EdgeRadius: 0
+--- !u!114 &1146450943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146450940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005a1728807ef5045830f274c90d1448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Otto
+    sentences:
+    - Okey, al parecer si presiono esta placa ilumina a otro color. Si presionas
+      la misma placa donde estoy parado posiblemente podamos salir.
+    - Si, pero veo dos placas de presion.
+    - Intenta con la primera.
+  nameText: {fileID: 1026161152}
+  dialogueText: {fileID: 294675596}
+  dialoguePanel: {fileID: 193294578}
+  speakSound: {fileID: 0}
+  CanSpeak: 0
 --- !u!1 &1148193437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,6 +2405,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 464095736}
     m_Modifications:
+    - target: {fileID: 6529052388842920272, guid: 2015996e3e4d93146be767d1b3afc8f6, type: 3}
+      propertyPath: door_open
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6529052388842920274, guid: 2015996e3e4d93146be767d1b3afc8f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.42
