@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class transition : MonoBehaviour
 {
-    [SerializeField] public Image img_transition;
+    [Header("Material Settings")]
+    [SerializeField] private Image img_transition;
     private float radiuscurtain;
     private float curtain;
-    //pruebas
-    [SerializeField] private bool op_world_2;
-    [SerializeField] private bool op_world_1;
-    public bool change = false;
+
+    [Header("functioning")]
+    [SerializeField] private GameObject World_1;
+    [SerializeField] private GameObject World_2;
+    public bool cam_1, cam_2, change;
     bool Full = false;
     private void Start()
     {
@@ -22,29 +24,62 @@ public class transition : MonoBehaviour
     private void Update()
     {
         Debug.Log(radiuscurtain);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            change = true;
-            
+            change = true;            
         }
-        if (change)
+
+        if(change)
+        opencurtine();
+        
+        if (radiuscurtain > 1f)
         {
-            img_transition.material.SetFloat("_Cutoff", curtain);
-            curtain = Mathf.Clamp(radiuscurtain, 0, 1);
-            radiuscurtain += Time.deltaTime;
+            StartCoroutine(change_world());
         }
-         if(radiuscurtain > 1f || Full == true)
+
+        closeCurtine();
+    }
+
+    IEnumerator change_world()
+    {
+        if(cam_1 && !cam_2)
         {
-            Full = true;
+
+            World_1.SetActive(false);
+            World_2.SetActive(true);
+        }
+        else
+        {
+            World_1.SetActive(true);
+            World_2.SetActive(false);
+        }
+            yield return new WaitForSeconds(1f);
+        Full = true;
+    }
+
+    public void opencurtine()
+    {
+        img_transition.material.SetFloat("_Cutoff", curtain);
+        curtain = Mathf.Clamp(radiuscurtain, 0, 1);
+        radiuscurtain += Time.deltaTime;
+    }
+
+    public void closeCurtine()
+    {
+        if (Full)
+        {
             change = false;
             img_transition.material.SetFloat("_Cutoff", curtain);
             curtain = Mathf.Clamp(radiuscurtain, 0, 1);
             radiuscurtain -= Time.deltaTime;
-            if(radiuscurtain < -0.01)
+            if (radiuscurtain < -0.01)
             {
                 Full = false;
                 Debug.Log("reset");
+                StopAllCoroutines();
                 radiuscurtain = 0;
+                cam_1 = !cam_1;
+                cam_2 = !cam_2;
             }
         }
     }
