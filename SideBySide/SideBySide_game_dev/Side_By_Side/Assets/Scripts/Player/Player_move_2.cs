@@ -15,6 +15,11 @@ public class Player_move_2 : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator player_animator;
 
+    [Header("Push & Pull Settings")]
+    public float Distance;
+    RaycastHit2D hit;
+    public GameObject ray_pull;
+
     private void Update()
     {
         if (player_2)
@@ -35,6 +40,20 @@ public class Player_move_2 : MonoBehaviour
     public void OnLanding()
     {
         player_animator.SetBool("Jumping", false);
+    }
+
+    public void raycasts_pull()
+    {
+        hit = Physics2D.Raycast(ray_pull.transform.position, Vector2.right, Distance);
+        Debug.DrawRay(ray_pull.transform.position, Vector2.right * Distance, Color.green);
+        if (hit.collider.tag == "Box")
+        {
+            player_animator.SetBool("Push", true);
+        }
+        else
+        {
+            player_animator.SetBool("Push", false);
+        }
     }
 
     public void Move()
