@@ -384,6 +384,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654ef524614c0714baa26665c83d21e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &902507964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1516507180264068368, guid: f3436d1cfc27f9e4e9a5aa803d803ca1, type: 3}
+  m_PrefabInstance: {fileID: 4110779760818957260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1173914831
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +796,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1962791497}
     m_Modifications:
+    - target: {fileID: 4110779760534180238, guid: f3436d1cfc27f9e4e9a5aa803d803ca1, type: 3}
+      propertyPath: ray_pull
+      value: 
+      objectReference: {fileID: 902507964}
+    - target: {fileID: 4110779760534180238, guid: f3436d1cfc27f9e4e9a5aa803d803ca1, type: 3}
+      propertyPath: Distance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4110779760534180338, guid: f3436d1cfc27f9e4e9a5aa803d803ca1, type: 3}
       propertyPath: m_Name
       value: spr_player_2

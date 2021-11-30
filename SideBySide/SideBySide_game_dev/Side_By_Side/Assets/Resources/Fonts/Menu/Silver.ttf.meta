@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d7509ac0673db6942b6e547cd6cb25ff
+guid: 4b14416839e4d804487cfff09c4b59ff
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Light Paprica
+  - Silver
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
