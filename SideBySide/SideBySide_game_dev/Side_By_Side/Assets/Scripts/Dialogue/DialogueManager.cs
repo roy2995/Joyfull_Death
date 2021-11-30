@@ -13,9 +13,11 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialoguePanel;
     private Queue<string> sentences;
 
+    string activeSentence;
 
     AudioSource myAudio;
     public AudioClip speakSound;
+    public float SentenceSpeed;
 
     public bool CanSpeak = false;
 
@@ -42,15 +44,16 @@ public class DialogueManager : MonoBehaviour
     }
     public void DisplayNextSentences()
     {
-        if (sentences.Count == 0)
+        if (sentences.Count <= 0)
         {
-            EndDialogue();
+            dialogueText.text = activeSentence;
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        activeSentence = sentences.Dequeue();
+        dialogueText.text = activeSentence;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(activeSentence));
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -60,16 +63,11 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text += letter;
             myAudio.PlayOneShot(speakSound);
-            yield return null;
+            yield return new WaitForSeconds(SentenceSpeed);
         }
     }
 
-    public void EndDialogue()
-    {
-        Debug.Log("End of conversation");
-    }
-
-    private void Update()
+    void Update()
     {
         if (CanSpeak)
         {
@@ -77,11 +75,10 @@ public class DialogueManager : MonoBehaviour
             {
                 CanSpeak = true;
                 dialoguePanel.SetActive(true);
-                {
-                    Debug.Log("Seguir al siguiente dialogo");
-                    DisplayNextSentences();
-                    
-                }
+
+                Debug.Log("Seguir al siguiente dialogo");
+                DisplayNextSentences();
+
             }
         }
     }
