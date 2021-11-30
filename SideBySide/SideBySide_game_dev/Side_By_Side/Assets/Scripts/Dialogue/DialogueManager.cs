@@ -47,6 +47,7 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count <= 0)
         {
             dialogueText.text = activeSentence;
+            EndDialogue();
             return;
         }
 
@@ -80,6 +81,14 @@ public class DialogueManager : MonoBehaviour
                 DisplayNextSentences();
 
             }
+        }
+    }
+
+    void EndDialogue()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            thisEvent.SetActive(false);
         }
     }
 
