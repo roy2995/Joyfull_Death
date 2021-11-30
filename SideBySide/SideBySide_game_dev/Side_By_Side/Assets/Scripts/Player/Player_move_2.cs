@@ -25,6 +25,7 @@ public class Player_move_2 : MonoBehaviour
         if (player_2)
         {
             Move();
+            raycasts_pull();
         }
     }
 
@@ -60,6 +61,10 @@ public class Player_move_2 : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         player_animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        if (horizontalMove <= -0.01f)
+            Distance = -0.5f;
+        else if (horizontalMove >= 0f)
+            Distance = 0.5f;
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
