@@ -751,7 +751,7 @@ TextureImporter:
         width: 49
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,9 +1082,9 @@ TextureImporter:
       name: Sprites models invertidos project 4_9
       rect:
         serializedVersion: 2
-        x: 76
+        x: 79
         y: 400
-        width: 49
+        width: 42
         height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1250,9 +1250,9 @@ TextureImporter:
       name: Sprites models invertidos project 4_17
       rect:
         serializedVersion: 2
-        x: 131
+        x: 134
         y: 438
-        width: 49
+        width: 43
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

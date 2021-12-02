@@ -683,9 +683,9 @@ TextureImporter:
       name: Sprites models project 4_5
       rect:
         serializedVersion: 2
-        x: 76
+        x: 79
         y: 400
-        width: 49
+        width: 42
         height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -746,9 +746,9 @@ TextureImporter:
       name: Sprites models project 4_8
       rect:
         serializedVersion: 2
-        x: 187
+        x: 189
         y: 435
-        width: 49
+        width: 45
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

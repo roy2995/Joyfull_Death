@@ -53,7 +53,7 @@ public class transition : MonoBehaviour
             World_1.SetActive(true);
             World_2.SetActive(false);
         }
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(.5f);
         Full = true;
     }
 
